@@ -1,0 +1,245 @@
+.main-img{
+	position: relative;
+	z-index: 10;
+}
+
+area{
+	cursot: pointer;
+}
+
+#map{
+	background-image:url(../i/map.jpg);
+	width: 569px;
+	height: 468px;
+	z-index: 5;
+	position: relative;
+}
+
+#map_for_ie{
+	display: none;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.town_block{
+	cursor:pointer;
+	display: none;
+	position: absolute;
+	z-index: 3;
+	width: auto;
+}
+
+.town_dot{
+	background: url(../i/town.gif) no-repeat;
+	z-index: 1;
+	position: absolute;
+	top: 40px;
+	left: -20px;
+	width: 15px;
+	height: 16px;
+	
+}
+
+.town{
+	font-weight: bold;
+	display: block;
+	font-family: Verdana;
+	font-size: 10pt;
+	background: #FFFFFF ;
+	padding: 0 5px 0 5px;
+	margin-bottom: -5px;
+}
+
+.raion{
+	margin-top: 0px;
+	display: block;
+	font-family: Verdana;
+	font-size: 9pt;
+	background:#FFFFFF;
+	padding: 0 5px 0 5px;
+}
+
+#essentykskyaya-block {
+    top: 305px;
+	left: 257px;
+}
+
+#min-vodi-block {
+    top: 275px;
+	left: 286px;
+}
+
+#georgievsk-block {
+    top: 283px;
+	left: 324px;
+}
+
+#novopavlovsk-block {
+    top: 312px;
+	left: 345px;
+}
+
+#zelenokymsk-block {
+    top: 240px;
+	left: 369px;
+}
+
+#kyrskaya-block {
+    top: 296px;
+	left: 441px;
+}
+
+#stepnoe-block {
+    top: 258px;
+	left: 448px;
+}
+
+#neftekymsk-block {
+    top: 184px;
+	left: 495px;
+}
+
+#levokymskoe-block {
+    top: 169px;
+	left: 450px;
+}
+
+#bydenovsk-block {
+    top: 180px;
+	left: 396px;
+}
+
+#aleksandrovskoe-block {
+    top: 196px;
+	left: 268px;
+}
+
+#novoselickoe-block {
+    top: 189px;
+	left: 316px;
+}
+
+#blagodarnii-block {
+    top: 133px;
+	left: 312px;
+}
+
+#azgir-block {
+    top: 86px;
+	left: 398px;
+}
+
+#letnyaya-stavka-block {
+    top: 84px;
+	left: 311px;
+}
+
+#svetlograd-block {
+    top: 101px;
+	left: 247px;
+}
+
+#kyrsavka-block {
+    top: 238px;
+	left: 214px;
+}
+
+#kochybeevskoe-block {
+    top: 214px;
+	left: 149px;
+}
+
+#mihailovsk-block {
+    top: 134px;
+	left: 156px;
+}
+
+#grachevka-block {
+    top: 128px;
+	left: 200px;
+}
+
+#donskoe-block {
+    top: 86px;
+	left: 150px;
+}
+
+#izob-block {
+    top: 99px;
+	left: 120px;
+}
+
+#novoaleks-block {
+    top: 80px;
+	left: 66px;
+}
+
+#divnoe-block {
+    top: 7px;
+	left: 296px;
+}
+
+#ipatovo-block {
+    top: 39px;
+	left: 249px;
+}
+
+#krasn-block {
+    top: 26px;
+	left: 95px;
+}
+
+#stavropol{
+	position: absolute;
+	z-index: 4;
+	top: 190px;
+	left: 150px;
+	width: auto;
+}
+
+#pyatigorsk{
+	position: absolute;
+	z-index: 3;
+	top: 343px;
+	left: 281px;
+	width: auto;
+}
+
+.city_dot{
+	background: url(../i/city_dot.gif) no-repeat;
+	z-index: 1;
+	position: absolute;
+	top: 2px;
+	left: -20px;
+	width: 15px;
+	height: 16px;
+}
+
+.city{
+	display: block;
+	font-family: Verdana;
+	font-size: 10pt;
+	background: #ffca00;
+	padding: 0 5px 0 5px;
+	margin-bottom: -5px;
+	z-index: 4;
+	border: 1px solid #FFFFFF;
+}
+
+#stavropol .city{
+	position: absolute;
+	top: -22px;
+	left: -130px;
+}
+
+#pyatigorsk .city{
+	position: absolute;
+	top: 20px;
+	left: -120px;
+}
+
+#essentykskyaya-block #essent{
+	position: absolute;
+    top: 2px;
+	left: -155px;
+}

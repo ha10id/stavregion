@@ -1,0 +1,124 @@
+.b-menu{
+	position: relative;
+	background: #FFFFFF url(../i/shadow-left.gif) repeat-y right top;
+	padding: 30px 0 0 0;
+	margin-bottom: 30px;
+	padding: 16px 0 0 0;
+	border-left: 2px solid #DDE2E1;
+}
+.menu-rbcorner{
+	position: absolute;
+	bottom: 0;
+	right: 12px;
+	width: 82px;
+	height: 18px;
+	background: url(../i/menu-rbcorner.gif) no-repeat right bottom;
+}
+.h-menu{
+	background: url(../i/bg-menu-eng.gif) repeat-x left bottom;
+	padding: 30px 0 60px 0;
+	margin-right: 12px;
+}
+.menu1-li{
+	margin-bottom: 8px;
+}
+.menu1-list{
+	font: 100% "Verdana", sans-serif;
+	margin: 0 20px 0 20px;
+	padding-left: 28px;
+}
+a.menu1-link{
+	display: block;
+	padding: 11px 20px 9px 20px;
+	margin-left: -20px;
+}
+a.menu1-link:link, a.menu1-link:visited{
+	background-image: url(../i/menu1.gif);
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	color: #223A35;
+	text-decoration: none;
+}
+a.menu1-link:hover, a.menu1-link:active{
+	background-image: url(../i/menu1-hover.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	color: #000000;
+	text-decoration: none;
+}
+.b-menu1-link{
+	border-bottom: 2px solid #EAEEEF;
+}
+.b-menu1-link.act{
+	margin-left: -10px;
+}
+.menu1-act{
+	display: block;
+	padding: 11px 20px 9px 30px;
+	margin-left: -20px;
+	background-image: url(../i/menu1-act.gif);
+	background-repeat: repeat-y;
+	background-position: left top;
+	background-color: #f5f5f5;
+}
+a.menu1-act:link, a.menu1-act:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+a.menu1-act:hover, a.menu1-act:active{
+	color: #223A35;
+	text-decoration: none;
+}
+
+
+.menu2-list{
+	margin: 8px 20px 23px 0px;
+}
+a.menu2-link, .menu2-act{
+	display: block;
+	padding: 11px 20px 9px 20px;
+}
+a.menu2-link:link, a.menu2-link:visited{
+	background-image: url(../i/menu2.gif);
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	color: #D96702;
+	text-decoration: underline;
+}
+a.menu2-link:hover, a.menu2-link:active, .act2{
+	background-image: url(../i/menu2-hover.gif);
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	color: #223A35;
+	text-decoration: none;
+}
+.menu2-act{
+	background-image: url(../i/menu2-hover.gif);
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	color: #223A35;
+	text-decoration: none;
+}
+a.menu2-act:link, a.menu2-act:visited{
+	background-image: url(../i/menu2-hover.gif);
+	text-decoration: underline;
+}
+a.menu2-act:hover, a.menu2-act:active{
+	text-decoration: none;
+	background-image: url(../i/menu2.gif);
+}
+
+/*.act2 a{
+	padding: 0;
+	margin: 0;
+	background-image: none;	
+}
+.act2 a:link, .act2 a:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+.act2 a:hover, .act2 a:active{
+	color: #223A35;
+	text-decoration: none;
+}
+*/

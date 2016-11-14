@@ -1,0 +1,24 @@
+/*-----------------------------NO-BACKROUND----------------------------------------*/
+body, .leftop, .des-corner1, .des-corner2, .l-search, .search-lcorner, .search-rcorner,
+.title-brcorner, .main, .l-bottom, .leftbottom, .rightbottom
+{
+	background: none;
+}
+/*----------------------------INVISIBLE----------------------------------------*/
+.l-title img{
+	display: none;
+}
+/*----------------------------NO-COLOR----------------------------------------*/
+{
+	color: #000000;
+}
+/*----------------------------LINKS----------------------------------------*/
+.b-banner a:link, .b-banner a:visited, .news a:link, .news a:visited, .incident a:link, .incident a:visited, .obnov a:link, .obnov a:visited{
+	color: #000000;
+	text-decoration: underline;
+}
+.b-banner a:hover, .b-banner a:active, .news a:hover, .news a:active, .incident a:hover, .incident a:active, .obnov a:hover, .obnov a:active{
+	color: #000000;
+	text-decoration: none;
+}
+

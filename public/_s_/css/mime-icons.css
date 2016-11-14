@@ -1,0 +1,25 @@
+.text ul.mime-list, .file{
+	margin-left: -50px;
+}
+.text li.mime-icon, .mime-icon{
+	background: url(../i/etc.png) no-repeat 9px 9px;
+	padding: 4px 0 18px 60px;
+}
+.text li.mime-icon.application__pdf, .mime-icon.application__pdf{
+	background: url(../i/pdf.png) no-repeat 9px 9px;
+}
+.text li.mime-icon.application__doc{
+	background: url(../i/doc.png) no-repeat 9px 9px;
+}
+.text li.mime-icon.application__xls{
+	background: url(../i/xls.png) no-repeat 9px 9px;
+}
+.text li.mime-icon.application__rar{
+	background: url(../i/rar.png) no-repeat 9px 9px;
+}
+.text li.mime-icon.application__zip{
+	background: url(../i/zip.png) no-repeat 9px 9px;
+} 
+.text li.mime-icon.application__rtf{
+	background: url(../i/rtf.png) no-repeat 9 9px;
+}               

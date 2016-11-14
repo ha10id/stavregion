@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /search
+Disallow: /starblind
+Allow: /
+Crawl-delay: 2

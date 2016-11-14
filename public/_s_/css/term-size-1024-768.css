@@ -1,0 +1,19 @@
+.holster{
+	width: 90%;
+}
+.b-main{
+	height: 422px;
+	padding-bottom: 20px;
+}
+.b-scrollarea{
+	height: 446px;
+}
+.b-scroll{
+	height: 537px;
+}
+#content-slider{
+	height: 303px;
+/*	padding-top: 145px;
+	padding-bottom: 145px;
+	height: 447px;
+}

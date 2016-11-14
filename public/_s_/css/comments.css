@@ -1,0 +1,111 @@
+h2.obs{
+	border-bottom: none;
+}
+.b-addcomment{
+	overflow: hidden;
+	margin: 15px -60px 0 -40px;
+	border-top: 2px solid #DDE2E1;
+}
+.text a.addcomment-button{
+	display: inline-block;
+	font-size: 90%;
+	color: #747B8D;
+	float: right;
+	margin-right: 60px;
+	height: 26px;
+	padding: 7px 17px 0 17px;
+	border-left: 2px solid #DDE2E1;
+	border-right: 2px solid #DDE2E1;
+	border-bottom: 2px solid #DDE2E1;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.text a.addcomment-button:link, .text a.addcomment-button:visited{
+	background: #FFFFFF url(../i/bg-addcomment-button.gif) repeat-x left bottom;
+	color: #747B8D;
+	text-decoration: none;
+}
+.text a.addcomment-button:hover, .text a.addcomment-button:active{
+	background: #ffffdd;
+	color: #000000;
+	text-decoration: none;
+}
+.b-comments{
+	margin: 15px 0 15px 0;
+	border: 1px solid #DDE2E1;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 10px 15px 15px 15px;
+}
+.b-comment{
+	padding: 15px 0 15px 13px;
+	border-bottom: 1px dashed #DDE2E1;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+	overflow: hidden;
+}
+.b-comment:link, .b-comment:visited{
+	background: #EFF2F3;
+}
+.b-comment:hover, .b-comment:focus, .b-comment:active{
+	background: #ffffdd;
+}
+.b-comment-adm{
+	overflow: hidden;
+	float: right;
+	margin-left: 40px;
+}
+.close{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../i/close.gif) no-repeat left top;
+}
+.comment-name{
+	display: inline-block;
+	background: #FFFFFF;
+	color: #223A35;
+	padding: 8px 13px 9px 13px;
+}
+a.comment-name:link, a.comment-name:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+a.comment-name:hover, a.comment-name:active{
+	color: #000000;
+	text-decoration: none;
+}
+.comment-date{
+	display: inline-block;
+	color: #747B8D;
+	font-size: 90%;
+	padding-left: 13px;
+}
+.comment-name a:link, .comment-name a:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+.comment-name a:hover, .comment-name a:active{
+	color: #223A35;
+	text-decoration: none;
+}
+.text p.comment-txt{
+	padding: 10px 15px 5px 0;
+	margin-bottom: 0;
+	color: #605D58;
+}
+textarea#id_comment{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.moder-form{
+    display: inline;
+}
+input#id_honeypot{
+    display: none;
+}

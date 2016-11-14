@@ -1,0 +1,201 @@
+.text{
+	line-height: 1.5em;
+}
+sup{
+	vertical-align: super;
+	font-size: 90%;
+}
+sub{
+	vertical-align: sub;
+	font-size: 90%;
+}
+.img-left{
+	float: left;
+	margin: 0 1.5em 1em 0;
+}
+.img-right{
+	float: right;
+	margin: 0 0 1em 1.5em;
+}
+.text p{
+	margin: 1.2em 0 1.5em 0;
+	padding: 0 3em 0 0;
+}
+.text ol{
+	list-style-type: decimal;
+	margin: 2em 0 1.5em 2.3em;
+}
+.text ol li{
+	margin-bottom: 0.9em;
+}
+.text a:link, .text a:visited{
+	color: #000000;
+	text-decoration: underline;
+}
+.text a:hover, .text a:active{
+	color: #000000;
+	text-decoration: none;
+}
+.text ul{
+	margin: 2em 0 1.5em 2.3em;
+	list-style-type: square;
+}
+.text ul li{
+	margin-bottom: 1em;
+	padding-left: 0.5em;
+}
+blockquote{
+	border-left: 10px solid #c9c9c9;
+	background: #EFF2F3;
+	font: 100% "Arial", sans-serif;
+	font-style: italic;
+	line-height: 1.4em;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+}
+/*-----------------HEADERS------------------------*/
+.l-h1{
+	padding-bottom: 3px;
+	border-bottom: 6px solid #DCE0E0;
+	margin: 1.5em 0 1em 0;
+}
+h1{
+	font: 160% "Tahoma", sans-serif;
+	border-bottom: 2px solid #DCE0E0;
+	padding: 0 30px 0.35em 0;
+}
+h2{
+	font: 140% "Tahoma", sans-serif;
+	border-bottom: 5px solid #DCE0E0;
+	margin: 1.5em 0 1em 0;
+	padding: 0 30px 0.35em 0;
+}
+h3{
+	font: bold 130% "Tahoma", sans-serif;
+	margin: 1.8em 0 1em 0;
+}
+/*-----------------MESSAGES------------------------*/
+.messages{
+	border: 3px solid #C0C0C0;
+	margin: 2em 0 1.5em 0;
+	padding: 1.5em 1em 0.5em 2em;
+	font-weight: bold;
+}
+.messages li{
+	margin-bottom: 1em;
+	padding: 0.1em 0 1em 1.9em;
+}
+.messages li.success{
+       background: url(../i/checkmark.png) no-repeat left 4px;
+}
+.messages li.error{
+       background: url(../i/error.gif) no-repeat left 4px;
+}
+/*-------------------------MIME-----------------------*/
+.text ul.mime-list, .file{
+	margin-left: 1em;
+}
+.text li.mime-icon, .mime-icon{
+	background: url(../i/mime-icon-sb.gif) no-repeat left top;
+	list-style-type: none;
+	margin-bottom: 0.7em;
+	padding: 0.3em 0 1em 3em;
+}
+.text li.mime-icon.application__pdf, .mime-icon.application__pdf{
+	background: url(../i/mime-icon-pdf-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.application__msword, .mime-icon.application__msword{
+	background: url(../i/mime-icon-doc-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.application__vnd__ms-excel, .text li.mime-icon.application__x-excel, .mime-icon.application__x-excel, .mime-icon.application__vnd__ms-excel{
+	background: url(../i/mime-icon-xls-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.application__rar, .mime-icon.application__rar, .text li.mime-icon.application__x-rar-compressed, .mime-icon.application__x-rar-compressed{
+	background: url(../i/mime-icon-rar-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.application__zip, .mime-icon.application__zip, .text li.mime-icon.application__x-tar, .mime-icon.application__x-tar{
+	background: url(../i/mime-icon-zip-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.application__rtf, .mime-icon.application__rtf{
+	background: url(../i/mime-icon-rtf-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.image__gif, .mime-icon.image__gif{
+	background: url(../i/mime-icon-gif-sb.gif) no-repeat left top;
+}
+.text li.mime-icon.image__jpeg, .mime-icon.image__jpeg{
+	background: url(../i/mime-icon-jpg-sb.gif) no-repeat left top;
+}
+.link{
+	background: url(../i/link.gif) no-repeat 0 0.45em;
+	padding: 0.3em 0 1em 3em;
+	margin-bottom: 0.7em;
+}
+
+/*--------------------------------TABLES----------------------------------*/
+.text table{
+	margin: 1.5em 0 2em 0;
+	border-collapse: collapse;
+	border-left: 20px solid #dde2e1;
+	border-top: 2px solid #dde2e1;
+	border-right: 2px solid #dde2e1;
+}
+.text td, .text th{
+	padding: 1em 2em 0.8em 1.7em;
+}
+.text td{
+	border: 2px solid #C0C0C0;
+}
+.text th{
+	background: #e5e9e9;
+	border: 2px solid #C0C0C0;
+	font-family: "Arial";
+	font-style: italic;
+	font-weight: bold;
+}
+.text tr td:first-child, .text tr th:first-child{
+	padding-left: 1em;
+}
+/*--------------------------------MAP-INDEX-LIST----------------------------------*/
+.text ul.sitemap, .text ul.index-list{
+	font-size: 150%;
+	margin-left: 0;
+}
+.text ul.index-list{
+	font-size: 120%;
+}
+.text .sitemap ul, .text .index-list ul{
+	margin: 1em 0 1em 0;
+}
+.text li.descendant{
+	font-size: 90%;
+	background: url(../i/li-sb.gif) no-repeat left 7px;
+	list-style-type: none;
+	padding-left: 1.4em;
+}
+/*--------------------------------NEWS-ARCHIVE----------------------------------*/
+dl.newslist{
+	overflow: hidden;
+	position: relative;
+	margin-left: 20px;
+}
+.text .newslist dt, .text .newslist dd{
+	position: relative;
+}
+.text .newslist dt{
+	background: url(../i/li-sb.gif) no-repeat 0 0.4em;
+	padding: 0 0 0 1.7em;
+}
+.text .newslist dd{
+	padding: 0 0 0 1.7em;
+	margin-bottom: 3em;
+}
+.nl-date{
+	font-size: 90%;
+	display: inline-block;
+	padding: 0.1em 0.6em;
+	background: #EAEEEF;
+}
+.nl-title{
+	display: block;
+	font-weight: bold;
+	margin: 0.3em 0 0.4em 0;
+}

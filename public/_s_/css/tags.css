@@ -1,0 +1,170 @@
+.tag {
+    float: right;
+}
+
+a.tag-add{
+    margin-left: 8px;
+}
+
+a.tag-add:visited, a.tag-add:link, a.tag-del:visited, a.tag-del:link {
+    color: #223a35;     
+    background-color: #eff0e7;  
+    padding: 2px 6px 2px 6px;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+a.tag-add:hover, a.tag-add:active, a.tag-del:hover, a.tag-del:active {
+    color: #eff0e7;  
+    background-color: #223a35;
+    padding: 2px 6px 2px 6px;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+a.tag-del {
+    border-left: solid 1px;
+}
+
+.clear-tag-filter{
+    margin-left: 8px;
+    float: right;
+}
+.clear-tag-filter a:link, .clear-tag-filter a:visited{
+    font-size: x-small;
+    color: #de1000;
+    text-decoration: underline;
+    padding: 2px 6px 2px 6px;
+}
+
+.clear-tag-filter a:hover, .clear-tag-filter a:active{
+    color: white;
+    background-color: #de1000;
+    text-decoration: none;
+}
+
+
+.cm-title{
+    border-left: 10px solid #DDE2E1;
+    font: 120% "Tahoma", sans-serif;
+    color: #747B8D;
+    background: #F4F5F5;
+    padding: 10px 0 8px 11px;
+    margin-bottom: 17px;
+}
+.cm{
+    background-color: white;
+    border: 1px solid grey;
+    margin: 20px 20px 25px;
+}
+.b-menu{
+    border-top: 4px solid #d5d8d8;
+}
+.tag-cloud{
+    overflow: hidden;
+    margin-left: 15px;
+    position: relative;
+    list-style-type: none;
+}
+.tag-cloud li{
+    background: url(../i/tags.gif) left center no-repeat;
+    display: inline-block;
+    padding: 0 0 0 10px;
+    margin: 0 11px 6px 0;
+}
+.selected-tag{
+    background: dodgerblue;
+    color: #FFFFFF;
+    padding: 0 3px;
+}
+.weight-1{
+    font-size: 90%;
+}
+.weight-2{
+    font-size: 90%;
+    font-weight: bold;
+}
+.weight-3{
+    font-size: 105%;
+}
+.weight-4{
+    font-size: 105%;
+    font-weight: bold;
+}
+.weight-5{
+    font-size: 135%;
+}
+.weight-6{
+    font-size: 135%;
+    font-weight: bold;
+}
+
+.weight-1 a:link, .weight-1 a:visited{
+    color: #747B8D;
+    text-decoration: none;
+}
+.weight-1 a:hover, .weight-1 a:active{
+    color: #747B8D;
+    text-decoration: underline;
+}
+.weight-2 a:link, .weight-2 a:visited{
+    color: #747B8D;
+    text-decoration: none;
+}
+.weight-2 a:hover, .weight-2 a:active{
+    color: #747B8D;
+    text-decoration: underline;
+}
+.weight-3 a:link, .weight-3 a:visited{
+    color: #4B5B61;
+    text-decoration: none;
+}
+.weight-3 a:hover, .weight-3 a:active{
+    color: #4B5B61;
+    text-decoration: underline;
+}
+.weight-4 a:link, .weight-4 a:visited{
+    color: #4B5B61;
+    text-decoration: none;
+}
+.weight-4 a:hover, .weight-4 a:active{
+    color: #4B5B61;
+    text-decoration: underline;
+}
+.weight-5 a:link, .weight-5 a:visited{
+    color: #223A35;
+    text-decoration: none;
+}
+.weight-5 a:hover, .weight-5 a:active{
+    color: #223A35;
+    text-decoration: underline;
+}
+.weight-6 a:link, .weight-6 a:visited{
+    color: #223A35;
+    text-decoration: none;
+}
+.weight-6 a:hover, .weight-6 a:active{
+    color: #223A35;
+    text-decoration: underline;
+}
+.selected-tag a:link, .selected-tag a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.selected-tag a:hover, .selected-tag a:active{
+    color: #FFFFFF;
+/*    background-color: #ffd055;*/
+    text-decoration: underline;
+}
+
+a.tags-all{
+    float: right;
+    color: #747b8d;
+}
+a.tags-all:link, a.tags-all:visited{
+    text-decoration: underline;
+}
+a.tags-all:hover, a.tags-all:active{
+    color: #000000;
+    text-decoration: none;
+}

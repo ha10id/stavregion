@@ -1,0 +1,36 @@
+.l-cont1, .l-cont2, .l-cont3, .b-main, .b-top, .b-leftop, .b-rightop, 
+.b-logo-sample, .b-sample-title,
+.b-menu, .b-mleft, .b-mright{
+	zoom: 1;
+}
+.b-leftop, .b-mleft{
+	margin-right: -3px;
+}
+.b-rightop, .b-mright{
+	margin-left: 327px;
+}
+.b-top{
+	overflow: hidden;
+}
+.b-menu, .h-menu, .menu1-list, .menu1-li, .menu2-list, .menu2-li, .menu3-list, .menu3-li, .menu1-link, .menu2-link, .menu3-link, .menu1-act, .menu2-act, .menu3-act{
+	zoom: 1;
+}
+.b-bottom, .b-starblind, .starblind{
+	zoom: 1;
+}
+.irlab{
+	cursor: pointer;
+}
+.b-blockttl, .b-vcard, .b-news, .b-contacts, .b-chief, .news-list, .news{
+	zoom: 1;
+}
+.news-date{
+	display: inline;
+}
+a.menu1-act, span.menu1-act{
+	zoom: 1;
+	position: relative;
+}
+.text, .l-h1, .file, .link{
+	zoom: 1;
+}

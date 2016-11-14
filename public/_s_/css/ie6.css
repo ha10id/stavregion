@@ -1,0 +1,218 @@
+body{
+    font: 85% "Verdana", sans-serif;
+}
+.l-top{
+    zoom: 1;
+    position: relative;
+}
+.leftop{
+    position: relative;
+    zoom: 1;
+    margin: 0 -400px 0 0;
+}
+.sinput{
+    font: 13px "Verdana", sans-serif;
+}
+.rightop{
+    position: relative;
+    zoom: 1;
+    margin: 0 0 0 400px;
+}
+.rightop-bcorner{
+    bottom: 7px;
+    font-size: 1px;
+}
+.mleft{
+    float: left;
+    width: 342px;
+}
+.mright{
+    position: relative;
+    padding-left: -3px;
+    margin: 0 0 0 342px;
+}
+.l-act{
+    position: relative;
+    zoom: 1;
+}
+.b-act{
+    position: relative;
+    margin-left: -3px;
+    zoom: 1;
+    padding-left: 5px;
+    height: 10.3em;
+}
+.act-list{
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    zoom: 1;
+    position: relative;
+}
+.act-text{
+    margin-left: 153px;
+    position: relative;
+    zoom: 1;
+    padding: 0 20px 10px 0;
+    font-size: 90%;
+}
+.act-img{
+    float: left;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+.des-corner2{
+    bottom: 69px;
+}
+
+.opr-list{
+    zoom: 1;
+}
+.opr-var{
+    position: relative;
+    zoom: 1;
+}
+
+.l-news{
+    margin-left: 47px;
+    position: relative;
+    zoom: 1;
+}
+.newsli{
+    padding: 0 50px 0 20px;
+    zoom: 1;
+    margin-top: -3px;
+}
+.newsli#first{
+    position: relative;
+    zoom: 1;
+}
+.news{
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+.news-txt{
+    margin-left: 158px;
+    zoom: 1;
+}
+.news-txt a:hover, .news-txt a:active{
+    background: none;
+    text-decoration: underline;
+}
+.news-arrow{
+    display: none;
+}
+.news-arrow a{
+    display: none;
+}
+/*-----------------NEWS2--------------------*/
+.news2-list{
+    margin-top: -3px;
+    position: relative;
+}
+.news2li{
+    background: url(../i/bg-outnews.gif) repeat-y left top;
+    padding: 0 50px 0 20px;
+}
+.news2{
+    position: relative;
+}
+/*--------------------OUTER-NEWS-----------------------*/
+.l-outnews{
+    margin-left: 47px;
+    zoom: 1;
+    position: relative;
+}
+.h-outnews{
+    position: relative;
+    overflow: hidden;
+    padding: 0 27px 0 20px;
+    zoom: 1;
+}
+.b-outnews{
+    zoom: 1;
+    position: relative;
+}
+.outnews{
+    position: relative;
+    padding: 16px 0 0 55px;
+    margin-bottom: 10px;
+    zoom: 1;
+}
+.border2{
+    height: 2px;
+    zoom: 1;
+    position: relative;
+    font-size: 1px;
+}
+.border{
+    height: 2px;
+    zoom: 1;
+    position: relative;
+    font-size: 1px;
+}
+
+/*---------------------------------BOTTOM-----------------------------------*/
+.leftbottom{
+    margin: 0 -400px 0 0;
+}
+.rightbottom{
+    position: relative;
+    margin: 0 0 0 397px;
+}
+.rightbottom-corner{
+    position: absolute;
+    bottom: 69px;
+    left: -3px;
+}
+/*-----------------------------HEADERS-----------------------------*/
+h1{
+    font: bold 100% "Verdana", sans-serif;
+}
+h2{
+    font: bold 100% "Verdana", sans-serif;
+    color: #223A35;
+    padding-top: 3px;
+    margin: 6px 25px 15px 153px;
+}
+.newsli h2{
+    font-size: 115%;
+    margin-left: 158px;
+}
+.l-h4{
+    margin-left: 40px;
+    position: relative;
+    zoom: 1;
+}
+.h4-corner{
+    position: absolute;
+    bottom: 0;
+    zoom: 1;
+}
+h4{
+    font: bold 120% "Tahoma", sans-serif;
+}
+.l-h4#obnov{
+    margin-left: 53px;
+}
+.l-h4#opros{
+    margin-left: 0;
+}
+#opros h4{
+    margin-left: 17px;
+    font-size: 120%;
+}
+h5{
+    font: bold 120% "Tahoma", sans-serif;
+}
+h6{
+    font: bold 110% "Tahoma", sans-serif;
+}
+.menu1-list{
+    font: bold 100% "Verdana", sans-serif;
+}
+
+.opr-links{
+    zoom: 1;
+}

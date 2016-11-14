@@ -1,0 +1,13 @@
+input#id_subject{
+    width: 100%;
+    font-size: 120%;
+}
+ol.topic-list{
+    list-style-type: none;
+}
+.new{
+    font-weight: bold;
+}
+.topic-li{
+    
+}

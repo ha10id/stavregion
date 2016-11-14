@@ -1,0 +1,98 @@
+.l-cont1, .l-cont2, .l-cont3, .b-main, .b-top, .b-leftop, .b-rightop, 
+.b-logo-sample, .b-sample-title,
+.b-menu, .b-mleft, .b-mright{
+	zoom: 1;
+}
+.des-corner1, .des-corner2{
+	zoom: 1;
+}
+.b-leftop, .b-mleft{
+	margin-right: -3px;
+}
+.b-rightop{
+	margin-left: 397px;
+}
+.b-mright{
+	margin-left: 339px;
+}
+.b-menu, .h-menu, .b-menu1-link, .menu1-list, .menu1-li, .menu2-list, .menu2-li, .menu3-list, .menu3-li, .menu1-link, .menu2-link, .menu3-link, .menu1-act, .menu2-act, .menu3-act, .border{
+	zoom: 1;
+}
+a.menu1-link{
+	margin-left: 0;
+}
+a.menu2-link{
+	position: relative;
+	margin-left: 0;
+}
+
+.b-alanews, .b-alanews-ttl, .alanews-ttl, .alanews, .alanews-date{
+	zoom: 1;
+}
+.b-alanews{
+
+}
+.text , .b-img, .b-img.alanews{
+	zoom: 1;
+}
+
+.b-img, .b-img.alanews{
+	display: inline-block;
+}
+.text, .text p, .b-img, .b-img img, .b-img.left, .b-img.alanews, h1, h2{
+	zoom: 1;
+}
+.b-img{
+	margin-left: -23px;
+}
+.b-bottom{
+	zoom: 1;
+}
+.bottom-corners{
+	bottom: 96px;
+}
+.des-corner2{
+	bottom: 69px;
+}
+
+.b-alanews{
+	zoom: 1;
+}
+.b-alanews-ttl{
+	zoom: 1;
+	position: relative;
+}
+.h-alanews{
+	display: inline-block;
+	zoom: 1;
+	position: relative;
+
+}
+.alanews-date{
+	color: #869491;
+	font-weight: bold;
+}
+.alanews-txt{
+	display: block;
+	margin: 10px 0 8px 0;
+}
+
+.b-img.alanews{
+	z-index: 2;
+	position: relative;
+}
+.messages{
+	zoom: 1;
+	position: relative;
+}
+.messages-list{
+	zoom: 1;
+	position: relative;
+}
+.gerb{
+	cursor: pointer;
+}
+.file, .link{
+	zoom: 1;
+	position: relative;
+}

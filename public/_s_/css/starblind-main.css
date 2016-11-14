@@ -1,0 +1,174 @@
+.b-menu-act{
+    overflow:hidden;
+}
+.b-main{
+	padding-bottom: 3em;
+}
+h4{
+	border-bottom: 7px solid #DCE0E0;
+	font: bold 130% "Tahoma", sans-serif;
+	margin: 0.5em 0 0.6em 0;
+	padding-bottom: 0.5em;
+
+}
+/*-----------------MENU------------------------------*/
+.b-menu{
+	border-top: none;
+	overflow: hidden;
+	margin-bottom: 50px;
+	background: none;
+	width: 45%;
+	margin-right: 7%;
+	float: left;
+
+}
+/*------------MENU1------------------*/
+.menu1-list{
+	font: 115% "Tahoma", sans-serif;
+	padding: 0;
+	width: 100%;
+}
+.menu1-li{
+	margin-right: 0;
+}
+.menu1-li.act1{
+	background: none;
+}
+.menu1-li:hover, .menu1-li:focus, .menu1-li:active{
+	background: none;
+}
+body a.menu1-link, span.menu1-link{
+	display: block;
+	margin-right: 0;
+	padding: 16px 20px 15px 40px;
+	border-bottom: 2px dotted #000000;
+}
+body a.menu1-link:link, body a.menu1-link:visited{
+	background: #FFFFFF url(../i/menu1-sb.gif) no-repeat 10px 20px;
+	text-decoration: none;
+}
+body a.menu1-link:hover, body a.menu1-link:focus, body a.menu1-link:active{
+	background: #EAEEEF url(../i/menu1-act-sb.gif) no-repeat 10px 20px;
+	text-decoration: underline;
+}
+span.menu1-link{
+	background: url(../i/menu1-act.gif) no-repeat 10px 20px;
+}
+body .act1 a.menu1-link:link, body .act1 a.menu1-link:visited{
+	background: #EAEEEF url(../i/menu1-act-sb.gif) no-repeat 10px 20px;
+	text-decoration: underline;
+}
+body .act1 a.menu1-link:hover, body .act1 a.menu1-link:focus, body .act1 a.menu1-link:active{
+	text-decoration: none;
+}
+
+/*------------B-ACT------------------*/
+.b-act{
+	overflow: hidden;
+	font: 105% "Tahoma", sans-serif;
+}
+.act-li{
+	margin-bottom: 3em;
+}
+.act-ttl{
+	display: block;
+	font-size: 110%;
+	margin-bottom: 0.6em;	
+}
+body .act-txt a:link, body .act-txt a:visited{
+	color: #000000;
+	text-decoration: none;
+}
+body .act-txt a:hover, body .act-txt a:focus, .act-txt a:active, body .act-ttl a:hover, body .act-ttl a:focus, .act-ttl a:active{
+	color: #6B6B6B;
+	text-decoration: none;
+}
+
+/*--------NEWS-------*/
+.news-list{
+	margin: 1em 1.5em;
+}
+.news-date, .news-ttl, .news-txt{
+	display: block;
+}
+.news-date{
+	font-size: 90%;
+}
+.news-li{
+	margin-bottom: 2.5em;
+}
+body .news-txt a:link, body .news-txt a:visited{
+	text-decoration: none;
+	color: #000000;
+}
+body .news-txt a:hover, body .news-txt a:focus, body .news-txt a:active, body a.news-ttl:hover, body a.news-ttl:focus, body a.news-ttl:active{
+	text-decoration: none;
+	color: #6B6B6B;
+}
+
+.news-ttl{
+	margin: 0.5em 0 0.8em 0;
+	font-size: 110%;
+}
+.news-links{
+	border-top: 7px solid #EAEEEF;
+	padding: 0.3em 1.71em;
+	font-size: 90%;
+	margin-bottom: 2.5em;
+}
+.news-arch{
+	display: inline-block;
+	margin-right: 0.8em;
+}
+.rss{
+	display: inline-block;
+	margin-left: 0.8em;
+}
+
+/*-----------OBNOV----------------*/
+.obnov-list{
+	margin: 1em 1.5em;
+}
+.obnov-date{
+	display: block;
+}
+.obnov-date{
+	font-size: 90%;
+}
+.obnov{
+	margin-bottom: 2em;
+}
+
+
+.b-banners{
+	margin: 3em 1.5em;
+	text-align: center;
+}
+.h-banners{
+	margin-left: auto;
+	margin-right: auto;
+}
+.b-banner{
+	background: #C0C0C0;
+	padding: 5px 7px;
+	display: inline-block;
+	margin-right: 2em;
+}
+a.ban-link{
+	display: inline-block;
+	padding: 0.25em 2.05em 0.25em 2.9em;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+body a.ban-link:link, body a.ban-link:visited{
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF url(../i/crumb-sb-act.gif) no-repeat 1.2em 0.4em;
+	text-decoration: none;
+}
+body a.ban-link:hover, body a.ban-link:focus, body a.ban-link:active{
+	border: 1px solid #EAEEEF;
+	background: #EAEEEF url(../i/crumb-sb.gif) no-repeat 1.2em 0.4em;
+	text-decoration: underline;
+}

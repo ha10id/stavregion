@@ -1,0 +1,72 @@
+.act1{
+	position: relative;
+	padding: 13px 20px 12px 30px;
+	background-image: url(../i/menu1-act.png);
+	background-repeat: repeat-y;
+	background-color: #f5f5f5;
+    width: 310px;
+}
+.menu1-act a:link, .menu1-act a:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+.menu1-act a:hover, .menu1-act a:active{
+	color: #000000;
+	text-decoration: none;
+}
+.menu1-corner{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 10px;
+	height: 8px;
+	background: url(../i/menu1-corner.gif) no-repeat bottom left;
+	padding: 0;
+}
+.menu2-list{
+	font: 100% "Lucida Console", sans-serif;
+	margin: 5px 30px 15px;
+}
+.menu2 a, .act2{
+	display: block;
+	padding: 11px 20px 9px 20px;
+}
+.menu2 a:link, .menu2 a:visited{
+	background-image: url(../i/menu2.png);
+	background-repeat: no-repeat;
+	background-position: left 14px;
+	margin-left: 0;
+	color: #165fb8;
+	text-decoration: none;
+}
+.menu2 a:hover, .menu2 a:active, .act2{
+	background-image: url(../i/menu2.png);
+	background-repeat: no-repeat;
+	background-position: left 14px;
+	color: #223A35;
+	text-decoration: none;
+}
+.act2 a{
+	padding: 0;
+	margin: 0;
+	background-image: none;	
+}
+.act2 a:link, .act2 a:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+.act2 a:hover, .act2 a:active{
+	color: #223A35;
+	text-decoration: none;
+}
+
+.menu3 a, .act3{
+	font-size: 90%;
+	display: block;
+	padding: 5px 20px 6px 35px;
+}
+
+.menu3 a:link, .menu3 a:visited{
+	background: none;
+	color: #000000;
+}

@@ -1,0 +1,42 @@
+.holster{
+	width: 90%;
+	overflow: hidden;
+}
+.h-search{
+	margin: 28px 0 19px 0;
+}
+.b-main{
+	height: 363px;
+	background: none;
+	margin: 0;
+}
+.b-buttons-main{
+	height: 363px;
+}
+.b-top{
+	width: 340px;
+	height: 180px;
+	margin-top: 0;
+}
+.stavregion{
+	top: 10px;
+	left: 110px;
+	width: 129px;
+	height: 22px;
+	background: url(../i/term/stavregion.gif) no-repeat left top;
+}
+.gerb{
+	top: 47px;
+}
+.title{
+	top: 61px;
+}
+
+
+
+.button-main-link-auth, .button-main-link-feedback{
+	top: 127px;
+}
+.button-main-link-anticor, .button-main-link-progs{
+	top: 254px;
+}

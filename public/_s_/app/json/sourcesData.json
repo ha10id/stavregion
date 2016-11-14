@@ -1,0 +1,34 @@
+{
+	"items" : [
+		{
+			"img" : "_s_/app/img/sources/pyatigorsk.png",
+			"alt" : "Пятигорск",
+			"link" : "http://www.pyatigorsk.org/",
+			"title" : "г.Пятигорск"
+		},
+		{
+			"img" : "_s_/app/img/sources/nevinnomysk.png",
+			"alt" : "г. Невинномысск",
+			"link" : "http://nevadm.ru/",
+			"title" : "г.Невинномысск"
+		},
+		{
+			"img" : "_s_/app/img/sources/neftekum.png",
+			"alt" : "Нефтекумский район",
+			"link" : "http://www.anmr-neftekumsk.ru/",
+			"title" : "Нефтекумский район"
+		},
+		{
+			"img" : "_s_/app/img/sources/aleks.png",
+			"alt" : "Александровский район",
+			"link" : "http://aleksadmin.ru/",
+			"title" : "Александровский район"
+		},
+		{
+			"img" : "_s_/app/img/sources/neftekum.png",
+			"alt" : "Нефтекумский район",
+			"link" : "http://www.anmr-neftekumsk.ru/",
+			"title" : "Нефтекумский район"
+		}
+	]
+}

@@ -1,0 +1,52 @@
+/** 
+ * theming styles
+ * 
+ */
+#header {
+    background: url(../images/admin-tools.png) 0 0 repeat-x;
+}
+
+#header #branding h1 {
+    margin: 0;
+    padding: 5px 10px;
+    text-indent: -9999px;
+    background: transparent url(../images/django.png) 10px 5px no-repeat;
+    height: 31px;
+    width: 93px;
+}
+
+div.breadcrumbs {
+    display: block;
+    padding: 10px 15px;
+    border: 0;
+    background-position: 0 -8px;
+    border-bottom: 1px solid #ededed;
+}
+
+div.breadcrumbs a {
+    display: inline;
+}
+
+#header #branding h1 {
+    margin-top: 0pt;
+    margin-right: 0pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-indent: -9999px;
+    background-color: transparent;
+
+    background-image: url(../i/stavregion.gif);
+
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0 0;
+    height: 40px;
+    width: 188px;
+}
+#header {
+    background: url(../i/bg-enter.gif) 0 0 repeat-x;
+}

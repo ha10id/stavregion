@@ -1,0 +1,32 @@
+
+a.edit_image,
+a.delete_image {
+  display: block;
+  position: absolute;
+  height: 14px;
+  z-index: 100;
+  padding: 2px;
+  padding-right: 4px;
+  border-color: #ddd #aaa #aaa #ddd;
+  border-style: solid;
+  border-width: 1px;
+  top: 35px;
+}
+
+a.edit_image {
+  left: 15px;
+  padding-left: 14px;
+  background: #fff url(crop.png) no-repeat scroll 2px 4px;
+}
+
+a.delete_image {
+  color: #cc3434;
+  right: 4px;
+  padding-left: 14px;
+  background: #fff url(icon_deletelink.gif) no-repeat scroll 2px 4px;
+}
+
+a.delete_image:hover {
+  color: #993333;
+}
+

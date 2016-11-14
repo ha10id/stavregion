@@ -1,0 +1,226 @@
+body{
+	background: #000000 url(../i/bg-body-sb-inv.gif) repeat-x left 170px;
+	color: #FFFFFF;
+}
+.l-cont1{
+	background: url(../i/bg-bottom-sb-inv.gif) repeat-x left bottom;
+}
+
+body a:link, body a:visited{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+body a:hover, body a:focus, body a:active{
+	color: #FFFFFFF;
+	text-decoration: none;
+}
+.gerb{
+	width: 114px;
+	height: 74px;
+	background: url(../i/gerb-sb-inv.gif) no-repeat left top;
+}
+body a.common-version:link, body a.common-version:visited{
+	background: #3F3F3F;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+body a.common-version:hover, body a.common-version:hover, body a.common-version:active{
+	background: #8A8A8A;
+	text-decoration: underline;
+}
+body a.search-link:link, body a.search-link:visited{
+	background: #000000 url(../i/zoom-sb-inv.gif) no-repeat 93% 2px;
+}
+body a.search-link:hover, body a.search-link:focus, body a.search-link:active{
+	background: #8A8A8A url(../i/zoom-sb-inv.gif) no-repeat 93% 2px;
+}
+.b-menu-nav{
+	background: url(../i/bg-menu-nav-inv.gif) no-repeat left top;
+}
+body a.menu-nav{
+	background: url(../i/menu-nav-inv.gif) no-repeat right 3px;
+}
+.sitelook-link{
+	background: #000000;
+}
+a.sitelook-link:link, a.sitelook-link:visited{
+	background: #000000;
+}
+a.sitelook-link:hover, a.sitelook-link:focus, a.sitelook-link:active{
+	background: #8A8A8A;
+}
+
+body a.sitelook-link.white:link, body a.sitelook-link.white:visited{
+	background: #FFFFFF;
+	color: #000000;
+}
+body a.sitelook-link.white:hover, body a.sitelook-link.white:focus, body a.sitelook-link.white:active{
+	background: #8A8A8A;
+	color: #000000;
+}
+.l-breadcrumbs{
+	background: #3F3F3F;
+}
+.breadcrumbs a:link, .breadcrumbs a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+	background: url(../i/crumb-sb-inv.gif) no-repeat right 3px;
+}
+.breadcrumbs a:hover, .breadcrumbs a:focus, .breadcrumbs a:active{
+	color: #FFFFFF;
+	text-decoration: underline;
+	background: url(../i/crumb-sb.gif) no-repeat right 3px;
+}
+
+
+.text a:link, .text a:visited{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.text a:hover, .text a:active{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.text li.mime-icon, .mime-icon{
+	background: url(../i/mime-icon-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.application__pdf, .mime-icon.application__pdf{
+	background: url(../i/mime-icon-pdf-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.application__msword, .mime-icon.application__msword{
+	background: url(../i/mime-icon-doc-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.application__vnd__ms-excel, .text li.mime-icon.application__x-excel, .mime-icon.application__x-excel, .mime-icon.application__vnd__ms-excel{
+	background: url(../i/mime-icon-xls-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.application__rar, .mime-icon.application__rar, .text li.mime-icon.application__x-rar-compressed, .mime-icon.application__x-rar-compressed{
+	background: url(../i/mime-icon-rar-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.application__zip, .mime-icon.application__zip, .text li.mime-icon.application__x-tar, .mime-icon.application__x-tar{
+	background: url(../i/mime-icon-zip-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.application__rtf, .mime-icon.application__rtf{
+	background: url(../i/mime-icon-rtf-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.image__gif, .mime-icon.image__gif{
+	background: url(../i/mime-icon-gif-sb-inv.gif) no-repeat left top;
+}
+.text li.mime-icon.image__jpeg, .mime-icon.image__jpeg{
+	background: url(../i/mime-icon-jpg-sb-inv.gif) no-repeat left top;
+}
+.link{
+	background: url(../i/link-inv.gif) no-repeat 0 0.45em;
+}
+.text li.descendant{
+	background: url(../i/li-sb-inv.gif) no-repeat left 7px;
+}
+.text table{
+	border-left: 20px solid #8A8A8A;
+}
+.text th{
+	background: #3F3F3F;
+}
+blockquote{
+	background: #3F3F3F;
+	border-left: 10px solid #8A8A8A;
+}
+
+.menu1-li.act1{
+	background: url(../i/menu1-li-act-inv.gif) no-repeat right center;
+}
+.menu1-li:hover, .menu1-li:focus, .menu1-li:active{
+	background: url(../i/menu1-li-act-inv.gif) no-repeat right center;
+}
+body a.menu1-link, span.menu1-link{
+	border-bottom: 2px dotted #FFFFFF;
+}
+body a.menu1-link:link, body a.menu1-link:visited{
+	background: #000000 url(../i/menu1-sb.gif) no-repeat 10px 20px;
+}
+body a.menu1-link:hover, body a.menu1-link:focus, body a.menu1-link:active{
+	background: #3F3F3F url(../i/menu1-act-sb.gif) no-repeat 10px 20px;
+}
+body .act1 a.menu1-link:link, body .act1 a.menu1-link:visited{
+	background: #3F3F3F url(../i/menu1-act-sb.gif) no-repeat 10px 20px;
+	text-decoration: underline;
+}
+span.menu1-link{
+    background: #3F3F3F url(../i/menu1-act-sb.gif) no-repeat 10px 20px;   
+}
+.menu2-li:hover, .menu2-li:focus, .menu2-li:active{
+	background: #3F3F3F url(../i/menu2-li-act-inv.gif) no-repeat left center;
+}
+.menu2-li.act2{
+	background: #3F3F3F url(../i/menu2-li-act-inv.gif) no-repeat left center;
+}
+body a.menu2-link, span.menu2-link{
+	display: block;
+	padding: 18px 20px 16px 40px;
+}
+body a.menu2-link:link, body a.menu2-link:visited{
+	text-decoration: none;
+}
+body a.menu2-link:hover, body a.menu2-link:focus, body a.menu2-link:active{
+	text-decoration: underline;
+}
+body .act2 a.menu2-link:link, body .act2 a.menu2-link:visited{
+	text-decoration: underline;
+}
+body .act2 a.menu2-link:hover, body .act2 a.menu2-link:focus, body .act2 a.menu2-link:active{
+	text-decoration: none;
+}
+.text .newslist dt{
+	background: url(../i/li-sb-inv.gif) no-repeat 0 0.4em;
+}
+.nl-date{
+	background: #3F3F3F;
+}
+.cm-title{
+	background: #3F3F3F;
+}
+.sinput{
+	background: #3F3F3F;
+	background: #000000;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+}
+.sbutton{
+	background: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	color: #000000;
+	font-weight: bold;
+	cursor: pointer;
+}
+body .act-txt a:link, body .act-txt a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+body .act-txt a:hover, body .act-txt a:focus, .act-txt a:active, body .act-ttl a:hover, body .act-ttl a:focus, .act-ttl a:active{
+	color: #6B6B6B;
+	text-decoration: none;
+}
+body .news-txt a:link, body .news-txt a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+body .news-txt a:hover, body .news-txt a:focus, body .news-txt a:active, body a.news-ttl:hover, body a.news-ttl:focus, body a.news-ttl:active{
+	text-decoration: none;
+	color: #6B6B6B;
+}
+
+
+
+.b-banner{
+	background: #FFFFFF;
+}
+body a.ban-link:link, body a.ban-link:visited{
+	border: 1px solid #000000;
+	background: #000000 url(../i/crumb-sb-inv.gif) no-repeat 1.2em 0.4em;
+	text-decoration: none;
+}
+body a.ban-link:hover, body a.ban-link:focus, body a.ban-link:active{
+	border: 1px solid #000000;
+	background: #000000 url(../i/crumb-sb.gif) no-repeat 1.2em 0.4em;
+	text-decoration: underline;
+}

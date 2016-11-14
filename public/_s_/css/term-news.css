@@ -1,0 +1,223 @@
+.b-mright{
+	margin-left: 35%;
+	position: relative;
+}
+.b-mleft{
+	position: relative;
+	width: 30%;
+	float: left;
+}
+.news{
+	overflow: hidden;
+	font: 17px "Tahoma", sans-serif;
+}
+.news-img{
+	display: inline-block;
+	float: left;
+	width: 141px;
+	height: 105px;
+	margin-right: 14px;
+}
+.news-img1{
+	background: url(../i/term/news-term1.jpg) no-repeat left top;
+}
+.news-img2{
+	background: url(../i/term/news-term2.gif) no-repeat left top;
+}
+.news-img3{
+	background: url(../i/term/news-term3.jpg) no-repeat left top;
+}
+.b-text ul.news-list{
+	margin: 0;
+	padding: 0;
+}
+.b-text ul.news-list li{
+	background: none;
+	margin: 0 0 26px 0;
+	padding: 0;
+}
+.b-text p.news{
+	margin: 0;
+	padding: 0;
+
+}
+.news-date{
+	display: block;	
+	font: 14px "Verdana", sans-serif;
+	color: #747B8D;
+}
+.news-ttl{
+	display: block;
+	font: 19px "Verdana", sans-serif;
+	padding: 0 40px 15px 0px;
+	margin: 10px 0;
+}
+a.news-ttl:link, a.news-ttl:visited{
+	background: #FFFFFF url(../i/term/news-arrow.gif) no-repeat right bottom;
+	color: #8C2B01;
+	text-decoration: underline;
+}
+a.news-ttl:hover, a.news-ttl:focus, a.news-ttl:active{
+	background: #FFFFFF url(../i/term/news-arrow-act.gif) no-repeat right bottom;
+	color: #8C2B01;
+	text-decoration: none;
+}
+.news-txt{
+	display: block;
+}
+a.news-txt:link, a.news-txt:visited{
+	color: #223A35;
+	text-decoration: none;
+}
+a.news-txt:hover, a.news-txt:focus, a.news-txt:active{
+	color: #000000;
+	text-decoration: none;
+}
+
+
+.b-text ul.tag-cloud{
+	margin-right: 25px;
+	overflow: hidden;
+}
+.b-text ul.tag-cloud li{
+	float: left;
+	background: url(../i/term/tag.gif) no-repeat left 9px;
+	margin: 0 20px 10px 0;
+	padding: 0 0 0 17px;
+}
+.b-text ul.tag-cloud a:link, .b-text ul.tag-cloud a:visited{
+	color: #747B8D;
+	text-decoration: none;
+}
+.b-text ul.tag-cloud a:hover, .b-text ul.tag-cloud a:focus, .b-text ul.tag-cloud a:active{
+	color: #000000;
+	text-decoration: none;
+}
+
+.b-text ul.tag-cloud li.selected-tag{                                  
+	background: #FFFFFF url(../i/term/tag-act.gif) no-repeat left 9px;
+	color: #223A35;
+}
+.b-text ul.tag-cloud .selected-tag a:link, .b-text ul.tag-cloud .selected-tag a:visited{
+	color: #223A35;
+	text-decoration: none;
+}
+.b-text ul.tag-cloud .selected-tag a:hover, .b-text ul.tag-cloud .selected-tag a:focus, .b-text ul.tag-cloud .selected-tag a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+.weight-1{
+    font-size: 70%;
+}
+.weight-2{
+    font-size: 70%;
+    font-weight: bold;
+}
+.weight-3{
+    font-size: 80%;
+}
+.weight-4{
+    font-size: 80%;
+    font-weight: bold;
+}
+.weight-5{
+    font-size: 105%;
+}
+.weight-6{
+    font-size: 105%;
+    font-weight: bold;
+}
+
+.weight-1 a:link, .weight-1 a:visited{
+    color: #747B8D;
+    text-decoration: none;
+}
+.weight-1 a:hover, .weight-1 a:active{
+    color: #747B8D;
+    text-decoration: underline;
+}
+.weight-2 a:link, .weight-2 a:visited{
+    color: #747B8D;
+    text-decoration: none;
+}
+.weight-2 a:hover, .weight-2 a:active{
+    color: #747B8D;
+    text-decoration: underline;
+}
+.weight-3 a:link, .weight-3 a:visited{
+    color: #4B5B61;
+    text-decoration: none;
+}
+.weight-3 a:hover, .weight-3 a:active{
+    color: #4B5B61;
+    text-decoration: underline;
+}
+.weight-4 a:link, .weight-4 a:visited{
+    color: #4B5B61;
+    text-decoration: none;
+}
+.weight-4 a:hover, .weight-4 a:active{
+    color: #4B5B61;
+    text-decoration: underline;
+}
+.weight-5 a:link, .weight-5 a:visited{
+    color: #223A35;
+    text-decoration: none;
+}
+.weight-5 a:hover, .weight-5 a:active{
+    color: #223A35;
+    text-decoration: underline;
+}
+.weight-6 a:link, .weight-6 a:visited{
+    color: #223A35;
+    text-decoration: none;
+}
+.weight-6 a:hover, .weight-6 a:active{
+    color: #223A35;
+    text-decoration: underline;
+}
+.selected-tag a:link, .selected-tag a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.selected-tag a:hover, .selected-tag a:active{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+a.clear-tags{
+	display: inline-block;
+	border: 2px solid #DDE2E1;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 3px 15px;
+	font-size: 90%;
+
+}
+.b-text a.clear-tags:link, .b-text a.clear-tags:visited{
+	background: #FFFFFF;
+ 	text-decoration: none;
+	color: #8C2B01;
+}
+.b-text a.clear-tags:hover, .b-text a.clear-tags:focus, .b-text a.clear-tags:active{
+	background: #f2f1ec;
+ 	text-decoration: none;
+	color: #000000;
+}
+
+.paginator {
+	margin-top: 80px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.paginator form {
+	display: inline;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.paginator input {
+	width: 2em;
+}

@@ -1,0 +1,26 @@
+$small: 320px;
+$mobile: 768px;
+$tablets: 992px;
+$desktops: 1200px;
+$widescreen: 1600px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: $mobile + 1) and (max-width: $tablets - 1) { @content; }
+  }
+  @else if $media == tabledesktop {
+    @media only screen and (min-width: $tablets + 1) and (max-width: $desktops - 1) { @content; }
+  }
+  @else if $media == desktops {
+    @media only screen and (min-width: $tablets) { @content; }
+  }
+  @else if $media == small {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == widescreen {
+    @media only screen and (min-width: $widescreen) { @content; }
+  }
+}

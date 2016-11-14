@@ -1,0 +1,706 @@
+.full_stazh_main{ display:none; }
+.resume_main_caption { font-weight: bold; }
+.resume_block {
+    width: 648px;
+}
+.resume_l_margin {
+    margin: 5px 0 5px 25px;
+}
+.resume_float_left {
+    float:left;
+    max-height: 80px;
+    min-height: 20px;
+}
+ .resume_fio_block {
+     width:260px;
+     padding: 0 10px 0 0;
+ }
+ .resume_birthday_block {
+     width:168px;
+     padding: 0 10px 0 0;
+ }
+ .resume_pol_block {
+     width:165px;
+     padding: 0 10px 0 0;
+ }
+ .resume_wishing_block {
+     width:290px;
+     padding: 0 10px 0 0;
+ }
+ .resume_education_block {
+     width:338px;
+     padding: 0 10px 0 0;
+ }
+ .resume_date_block {
+     width:238px;
+     padding: 0 10px 0 0;
+ }
+ .resume_full_stazh_block {
+     width:160px;
+     padding: 0 10px 0 0;
+ }
+ .resume_fpol_block {
+     width:160px;
+     padding: 0 10px 0 0;
+ }
+ .resume_filter_row_block, .vacancy_filter_row_block {
+    margin: 10px 0 0;
+    max-height: 100px;
+    min-height: 20px;
+    overflow: hidden;
+}
+ .resume_dolzhn_block {
+     width:140px;
+     padding: 0 10px 0 0;
+ }
+ .resume_bid_stazh_block {
+     width:263px;
+     padding: 0 10px 0 0;
+ }
+ .resume_name_stazh_org_block {
+     width:190px;
+     padding: 0 10px 0 0;
+ }
+ .vacancy_mini_caption {
+     color: #989898;
+     font-size: 13px;
+	 text-align: left!important;
+ }
+ .full_stazh_main {
+    margin: 0 0 0 25px;
+    font-size: 13px;
+}
+.close_full_stazh {
+    background: url("/_s_/i/vac_plus.png") no-repeat scroll 0 5px transparent;
+}
+ .open_full_stazh {
+    background: url("/_s_/i/vac_minus.png") no-repeat scroll 0 5px transparent;
+}
+ .full_stazh_top, .remove_stazh_block {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 0 16px;
+ }
+ .not_stazh_top {
+    font-size: 12px;
+    line-height: 20px;
+ }
+.resume_clear{
+    clear:both;
+}
+.resume_stazh_line {
+    max-height: 100px;
+    min-height: 20px;
+    overflow: hidden;
+}
+.resume_izbr, .resume_izbr_r {
+    cursor: pointer;
+    float: right;
+    height: 17px;
+    margin: 5px 20px 0 0;
+    width: 17px;
+}
+.resume_razd{
+    margin: 10px 0;
+}
+ .resume_add_izbr {
+    background: url("/_s_/i/vac_trstar.png") no-repeat scroll 0 0 transparent;
+}
+ .resume_remove_izbr {
+     background: url("/_s_/i/vac_fstar.png") no-repeat scroll 0 0 transparent;
+ }
+.vinputdate_input, .vinputother_input, .vinputprof_input, .vinput_input {
+    border: 1px solid #ccc;
+    font-family: Verdana;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 5px;
+    width: 80px;
+    font-size: 11px;
+}
+.vinputother_input{
+    padding: 0 2px;
+    width: 49px;
+}
+.vinputprof_input{
+    padding: 0 5px;
+    width: 134px;
+}
+ .resume_filter_pol select,  .resume_filter_full_stazh select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1;
+    padding: 0;
+    width: 190px;
+   }
+.resume_filter_pol, .resume_filter_full_stazh {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 143px center transparent;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+}
+ .resume_filter_search_block, .vacancy_filter_search_block {
+    background: url("/_s_/i/vac_search.png") no-repeat scroll 0 0 transparent;
+    margin: 22px 0 0 10px;
+    width: 16px;
+    cursor: pointer;
+ }
+ #vacancy_add {
+    height: 32px;
+    margin: 15px 0 25px;
+    width: 195px;
+}
+.vacancy_block {
+    font-size: 12px;
+}
+.vacancy_main_caption {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 15px 0 0;
+}
+.vacancy_l_margin {
+    margin: 5px 0 5px 25px;
+}
+.vacancy_float_left {
+    float:left;
+    padding: 0 10px 0 0;
+    max-height: 100px;
+    min-height: 40px;
+}
+.vacancy_filter_row_block .vacancy_caption {
+    min-height: 40px;
+}
+.vacancy_mini_caption {
+    color: #989898;
+    font-size: 11px;
+}
+.vacancy_sluzh_rab_block {
+    width: 120px;
+}
+.vacancy_razm_opl_tr_block {
+    width: 123px;
+}
+.vacancy_srok_sluzh_contr_block {
+    width: 110px;
+}
+.vacancy_cap_block {
+    width: 146px;
+}
+.vacancy_opl_block {
+    width: 152px;
+}
+.vacancy_frabday_block {
+    width: 159px;
+}
+.vacancy_full_stazh_block {
+    width: 115px;
+}
+.vacancy_filter_rabday select,  .vacancy_filter_full_stazh select,  .vacancy_filter_cap select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    font-size: 12px;
+    height: 20px;
+    line-height: 1;
+    padding: 0;
+    width: 200px;
+}
+.vacancy_filter_cap select {
+    padding: 3px 50px 0 0;
+}
+.vacancy_filter_full_stazh select {
+    padding: 3px 85px 0 0;
+}
+.vacancy_filter_rabday select {
+    padding: 3px 40px 0 0;
+}
+.vacancy_filter {
+    font-size: 12px;
+}
+.vacancy_filter_rabday, .vacancy_filter_full_stazh, .vacancy_filter_cap {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 100px center transparent;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+}
+.vacancy_filter_rabday {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 143px center transparent;
+}
+.vacancy_filter_cap {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 130px center transparent;
+}
+.vacancy_nal_comandirovok_block {
+    width: 110px;
+}
+.vacancy_norm_rab_dnya_block {
+    width: 110px;
+}
+.vacancy_first_row_block, .vacancy_second_row_block {
+    max-height: 100px;
+    min-height: 40px;
+    overflow: hidden;
+}
+.vacancy_third_row_block {
+    max-height: 100px;
+    min-height: 20px;
+    overflow: hidden;
+}
+.vacancy_add_izbr {
+    background: url("/_s_/i/vac_trstar.png") no-repeat scroll 0 0 transparent;
+}
+.vacancy_add_otclick {
+    background: url("/_s_/i/vac_respond.png") no-repeat scroll 0 0 transparent;
+    height: 19px !important;
+    margin: 4px 20px 0 0 !important;
+    width: 19px !important;
+}
+.vacancy_remove_izbr {
+    background: url("/_s_/i/vac_fstar.png") no-repeat scroll 0 0 transparent;
+}
+.vacancy_izbr, .vacancy_izbr_s, .vacancy_otclick {
+    cursor: pointer;
+    float: right;
+    height: 17px;
+    margin: 5px 20px 0 0;
+    width: 17px;
+}
+.vacancy_first_row_block .vacancy_float_left .vacancy_mini_caption {
+    min-height: 60px;
+}
+.vacancy_second_row_block .vacancy_float_left .vacancy_mini_caption {
+    min-height: 40px;
+}
+.vacancy_third_row_block .vacancy_float_left .vacancy_mini_caption {
+    min-height: 20px;
+}
+.vacancy_obl_prof_deyat_block {
+    margin: 0 0 5px;
+}
+.full_vacancy_top {
+    color: #165fb8;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0 0 15px;
+}
+.full_vacancy_main {
+    display:none;
+}
+.vacancy_ur_obrazov_block {
+    width: 163px;
+}
+.stud_otclick_block_m_pol {
+    width: 110px;
+}
+.vacancy_trebov_k_stazhy_block {
+    width: 150px;
+}
+.vacancy_neobh_znan_naviki_block {
+    width: 230px;
+}
+.stud_otclick_block_m_fio {
+    width: 350px;
+}
+.vacancy_regl_img {
+    background: url("/_s_/i/vac_diskette.png") no-repeat scroll 0 0 transparent;
+    padding: 0 0 0 25px;
+}
+.vacancy_opis_dolzhn_obyaz_block, .vacancy_info_gos_garant_block {
+    margin: 10px 0;
+}
+.vacancy_redact_right_block {
+    float: right;
+}
+.vacancy_icon_redact {
+    background: url("/_s_/i/vac_edit.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 15px;
+    margin: 0 20px;
+    width: 15px;
+}
+.vacancy_icon_delete {
+    background: url("/_s_/i/vac_trash.png") no-repeat scroll 0 -1px transparent;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    width: 18px;
+}
+.org_resume_block .vacancy_main_caption {
+    margin: 15px 0 0;
+}
+.org_resume_block_m .vacancy_mini_caption {
+    float: left;
+    margin: 0 10px;
+}
+.org_resume_block_m > div {
+    margin: 0 0 0 100px;
+}
+.org_resume_practic, .stud_otclick_otkl {
+    background: none repeat scroll 0 0 rgb(0, 115, 255);
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px 0;
+    text-align: center!important;
+    width: 130px;
+}
+.org_resume_practic_click {
+    border: 1px solid rgb(0, 115, 255);
+    cursor: pointer;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 5px;
+}
+.org_resume_practic_click:hover {
+    border: 1px solid white;
+}
+.vinput_other_input {
+    border: 1px solid #ccc;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 18px;
+    overflow: hidden;
+    padding: 0 5px;
+    width: 255px;
+}
+.vacancy_vac_otclick_remove {
+    background: none repeat scroll 0 0 rgb(0, 115, 255);
+    color: white;
+    cursor: pointer;
+    float: right;
+    margin: 0 10px;
+    text-align: center;
+    width: 130px;
+}
+.vacancy_soisk_vac_otclick_remove, .vacancy_practice_otclick_remove {
+    background: url("/_s_/i/vac_decline.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 13px;
+    margin: 5px 20px 0 0;
+    width: 13px;
+}
+.fieldWrapper label {
+    cursor: context-menu;
+}
+#prof_caption_block {
+    margin: 15px 0 0;
+}
+#prof_caption_block .input_caption, #birthday_block {
+    float: left;
+    margin: 0 20px 0 0;
+}
+#id_prof_caption {
+    font-size: 14px;
+    width: 300px;
+}
+#date_sozd_block {
+    float: left;
+    width: 270px;
+}
+.add_vacancy_first_row {
+    margin: 10px 0;
+}
+.add_vacancy_first_row .vinput_input {
+    width: 200px;
+}
+#sluzh_rab_vrem_block, #srok_sluzh_contr_block {
+    float: left;
+    padding: 0 20px 0 0;
+}
+.fieldWrapper {
+    font-size: 12px;
+}
+.fieldWrapper #id_sluzh_rab_vrem, .fieldWrapper #id_srok_sluzh_contr {
+    width: 165px;
+}
+.add_vacancy_second_row {
+    margin: 0 0 10px;
+}
+#id_max_razm_opl_tr, #id_min_razm_opl_tr {
+    width: 50px;
+}
+.add_vacancy_third_row, .add_vacancy_forth_row {
+    margin: 0 0 10px;
+}
+#norm_rab_dnya_block {
+    float: left;
+    padding: 0 20px 0 0;
+}
+#norm_rab_dnya_block .input_field {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 135px center transparent;
+    width: 155px;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+}
+#id_norm_rab_dnya {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    width: 190px;
+}
+#nal_comandirovok_block .input_field {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 135px center transparent;
+    width: 155px;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+}
+#id_nal_comandirovok {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    width: 190px;
+}
+#opis_dolzhn_obyaz_block .vinput_input, #info_gos_garant_block .vinput_input, #wishing_block .vinput_input, #contact_block .vinput_input {
+    height: 70px;
+    width: 635px;
+}
+#opis_dolzhn_obyaz_block {
+    margin: 0 0 10px 0;
+}
+#neobh_znan_naviki_block {
+    float: left;
+    padding: 0 20px 0 0;
+    width: 270px;
+}
+#id_neobh_znan_naviki {
+    height: 92px;
+    width: 255px;
+}
+#ur_obrazov_block {
+    float: left;
+    padding: 0 20px 0 0;
+    width: 145px;
+}
+#id_ur_obrazov {
+    width: 130px;
+}
+#trebov_k_stazhy_block {
+    float: left;
+    height: 63px;
+    padding: 0;
+    width: 190px;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    margin: 0 0 10px;
+}
+#id_trebov_k_stazhy {
+    width: 190px;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+#trebov_k_stazhy_block .input_field {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 135px center transparent;
+    width: 155px;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+}
+#id_dolzhn_reglam {
+    width: 346px;
+}
+#vacancy_save {
+    background: none repeat scroll 0 0 rgb(0, 115, 255);
+    border: medium none;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0 0;
+    padding: 5px 20px;
+}
+#resume_add_stazh_block {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 0 16px;
+}
+#fio_block {
+    margin: 10px 0 0;
+}
+#fio_block .input_caption {
+    float: left;
+    margin: 1px 20px 0 0;
+}
+#id_fio {
+    font-size: 12px;
+    width: 350px;
+}
+.id_pol {
+    width: 22px !important;
+}
+.vac_marg {
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+.vac_marg1 label, .vac_marg label {
+    padding: 2px 0 2px 20px;
+}
+#pol_block {
+    padding: 0 0 0 275px;
+}
+body:not(#Foo) input[type=radio]
+  {display:none;}
+body:not(#Foo) input[type=radio] + label
+  {background:url("/_s_/i/vac_select2.png") no-repeat 0px 0px;}
+body:not(#Foo) input[type=radio]:checked + label
+  {background:url("/_s_/i/vac_select1.png") no-repeat 0px 0px;}
+textarea {
+    resize: none;
+}
+#wishing_block {
+    margin: 10px 0;
+}
+#id_full_stazh, #id_name_org, #id_dolzhn {
+    width: 200px;
+}
+#full_stazh_block {
+    margin: 10px 0;
+}
+.resume_mini_srazh_block {
+    margin: 0 0 20px;
+}
+#start_date_block {
+    float: left;
+    padding: 0 20px 0 0;
+}
+#id_start_date, #id_finish_date {
+    width: 150px;
+}
+#name_org_block .input_caption, #rucovod_org_block .input_caption, #contact_org_block .input_caption, #structure_org_block .input_caption {
+    float: left;
+    margin: 0 20px 0 0;
+}
+#name_org_block,  #contact_org_block {
+    margin: 10px 0;
+}
+#id_name_org, #id_rucovod_org, #id_contact, #id_structure_org {
+    width: 450px;
+}
+#id_structure_org {
+    height: 100px;
+}
+#id_contact {
+    margin: 0 0 0 26px;
+}
+#id_name_org {
+    margin: 0 0 0 6px;
+}
+#id_rucovod_org {
+    margin: 0 0 0 33px;
+}
+#spec_for_practice_block, #education_block {
+    margin: 10px 0;
+}
+#id_spec_for_practice, #id_practice_dop_info, #id_fio_st {
+    width: 450px;
+}
+#pol_block, #practice_dop_info_block, #fio_st_block {
+    margin: 0 0 10px;
+}
+#birthday_block #id_birthday {
+    width: 150px;
+}
+#id_education {
+    height: 70px;
+    width: 635px;
+}
+.add_week_for_finish_date {
+    color: #165fb8;
+    cursor: pointer;
+}
+.view_servis_cabinet {
+    margin: 10px 0 0;
+}
+.view_servis_cabinet > a {
+    background: none repeat scroll 0 0 rgb(0, 115, 255);
+    color: white !important;
+    padding: 2px 10px;
+    text-decoration: none !important;
+}
+.vacancy_link_cab {
+    margin: 10px 0 0;
+}
+.vacancy_link_brc.breadcrumbs {
+    font-size: 11px;
+    margin-right: 12px;
+}
+.text2 div {
+    word-wrap: break-word;
+	text-align: left;
+}
+.resume_wishing_block div:last-child, .resume_education_block div:last-child {
+    overflow: hidden;
+    height: 60px;
+}
+.vac_page_nav div {
+    float: left;
+    margin: 0 10px 0px 0;
+}
+.vac_page_nav {
+    min-height: 40px;
+}
+a.vacancy_active_page {
+    background: gainsboro;
+    border-radius: 12px;
+}
+.vac_page_nav a {
+    padding: 3px 7px;
+}
+.resume_filter_obl_prof_deyat.resume_float_left select, #full_stazh_block  select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1;
+    padding: 0;
+    width: 280px;
+}
+.resume_filter_obl_prof_deyat.resume_float_left {
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 249px center transparent;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+    width: 265px;
+}
+#full_stazh_block .input_field {
+background: url("/_s_/i/vac_triangle.png") no-repeat scroll 245px center transparent;
+    border: 1px solid #ccc;
+    height: 20px;
+    overflow: hidden;
+    width: 260px;
+}
+.resume_filter_obl_prof_deyat_cap {
+    margin: 10px 0 0 0;
+}
+#obl_prof_deyat_block .input_field {
+    float: left;
+    width: 360px;
+    height: 20px;
+    background: url("/_s_/i/vac_triangle.png") no-repeat scroll 340px center transparent;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+.input_field select.vacancy_searchbox_profarea {
+    border: 0 none;
+    background: transparent;
+    height: 20px;
+}
+div.vacancy_toogle_oms_info {
+    position: relative;
+    float: right;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    height: 20px;
+    font-size: 12px;
+    padding: 0 5px;
+    background: rgb(0, 115, 255);
+    color: white;
+}
+.org_resume_block .org_resume_block_m, .vac_info_oms_class {
+    display: none;
+}

@@ -1,0 +1,196 @@
+	.gallery_id {
+		display: none;
+	}
+	#gallery_block {
+		height: auto;
+	}
+	#upload-all {
+		display: none;
+	}
+	#img-container {
+		margin-top: 5px;
+		position: relative;
+		min-height: 400px;
+		height: auto;
+		border: 1px solid #CCC;
+		background: white;
+		//background-color: #3f3f3f;
+	}
+	#img-list {
+		margin-left: 1.5em;
+		display: table;
+	}
+	#img-list li {
+		float: left;
+		margin-left: 0.5em;
+		margin-bottom: 2.8em;
+		display: inline;
+		//color: #fff;
+	}
+	.highlighted {
+		border: solid;
+		border-color: yellow;
+		border-width: 3px;
+	}
+	.properties {
+		position:absolute;
+		text-align: left;
+		display: none;
+		height: 34px;
+		font-size: 8pt;
+	}
+	.properties a {
+		vertical-align: middle;
+		color: white;
+	}
+	.description {
+		padding-right: 2em;
+		position: absolute;
+		height: 2em;
+		margin-top: -2.67em;
+		opacity: 0.8;
+		display: none;
+		background: #3f3f3f;
+	}
+	.description input, .description label {
+		opacity: 1;
+		color: white;
+		background: #3f3f3f;
+	}
+/*Crop in gallery*/
+.divCrop {
+	display: table;
+	background: url('/_s_/irphoto/i/bullet.png');
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+.divCrop input , .divCrop p{
+	float: right;
+}
+.divCont {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 15%;
+	height: 625px;
+	width: 1020px;
+}
+table {
+	border: 0px;
+	background-color: white;
+}
+.slide {
+	display: none;
+}
+/* CSS FOR JCROP*/
+.jcrop-holder { text-align: left; }
+
+.jcrop-vline, .jcrop-hline
+{
+	font-size: 0px;
+	position: absolute;
+	background: white url('../../jcrop/css/Jcrop.gif') top left repeat;
+}
+.jcrop-vline { height: 100%; width: 1px !important; }
+.jcrop-hline { width: 100%; height: 1px !important; }
+.jcrop-vline.right { right: 0px; }
+.jcrop-hline.bottom { bottom: 0px; }
+.jcrop-handle {
+	font-size: 1px;
+	width: 7px !important;
+	height: 7px !important;
+	border: 1px #eee solid;
+	background-color: #333;
+}
+
+.jcrop-tracker { width: 100%; height: 100%; }
+
+.custom .jcrop-vline,
+.custom .jcrop-hline
+{
+	background: yellow;
+}
+.custom .jcrop-handle
+{
+	border-color: black;
+	background-color: #C7BB00;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+/*Кнопки*/
+.up img{
+	width: 204px;
+	height: 68px;
+	margin-top: -35px;
+	margin-left: -1px;
+}
+.up:hover img{
+	width: 204px;
+	height: 68px;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+.down img{
+	width: 204px;
+	height: 68px;
+	margin-top: -35px;
+	margin-left: -35px;
+}
+.down:hover img{
+	width: 204px;
+	height: 68px;
+	margin-top: -1px;
+	margin-left: -35px;
+}
+.rotate_270 img{
+	width: 204px;
+	height: 68px;
+	margin-top: -35px;
+	margin-left: -103px;
+}
+.rotate_270:hover img{
+	width: 204px;
+	height: 68px;
+	margin-top: -1px;
+	margin-left: -103px;
+}
+.rotate_90 img{
+	width: 204px;
+	height: 68px;
+	margin-top: -35px;
+	margin-left: -69px;
+}
+.rotate_90:hover img{
+	width: 204px;
+	height: 68px;
+	margin-top: -1px;
+	margin-left: -69px;
+}
+.crop img{
+	width: 204px;
+	height: 68px;
+	margin-top: -35px;
+	margin-left: -137px;
+}
+.crop:hover img{
+	width: 204px;
+	height: 68px;
+	margin-top: -1px;
+	margin-left: -137px;
+}
+.delete img{
+	width: 204px;
+	height: 68px;
+	margin-top: -35px;
+	margin-left: -171px;
+}
+.delete:hover img{
+	width: 204px;
+	height: 68px;
+	margin-top: -1px;
+	margin-left: -171px;
+}

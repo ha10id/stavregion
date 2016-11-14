@@ -1,0 +1,38 @@
+.menu1-list{
+	position: relative;
+     margin: 0 20px 0 0;
+}
+.b-menu{
+    border: 1px solid grey;
+    background-color: white;
+    margin: 0 auto;
+    width: 360px
+}
+.menu1-list{
+	font: 110% "Lucida Console", sans-serif;
+    margin: 0 20px 0 0;
+}
+.menu1 a{
+	display: block;
+	padding: 13px 20px 12px 20px;
+}
+.menu1 a:link, .menu1 a:visited{
+	background-repeat: no-repeat;
+	background-position: left 18px;
+	margin-left: 10px;
+	color: #165fb8;
+	text-decoration: none;
+}
+.menu1 a:hover, .menu1 a:active{
+	background-image: url(../i/menu1-hover.png);
+	background-repeat: repeat-y;
+	background-position: left top;
+	color: #165fff;
+	text-decoration: none;
+}
+.border{
+	height: 2px;
+	background: #EAEEEF;
+	margin-left: 20px;
+	padding: 0;
+}

@@ -1,0 +1,208 @@
+/*-----------------------------NO-BACKROUND----------------------------------------*/
+body, .b-leftop, .b-rightop, .h-rightop, .l-cont1,
+
+
+.b-search, .h-search, 
+.b-main, .b-bottom, .b-leftbottom, .b-rightbottom, .b-img, .b-img.alanews
+{
+	background: none;
+}
+/*----------------------------INVISIBLE----------------------------------------*/
+.title,
+.rightop-tcorner, .rightop-bcorner, .des-corner1, .des-corner2, .bottom-corners, .bottom-flag, .rightbottom-corner, .grey-stripe,
+.search-lcorner, .search-rcorner, .menu-rbcorner
+{
+	display: none;
+}
+/*----------------------------NO-COLOR----------------------------------------*/
+body, .alanews-date, h2{
+	color: #000000;
+}
+/*----------------------------LINKS----------------------------------------*/
+.b-alanews a:link, .b-alanews a:visited{
+	color: #000000;
+	text-decoration: underline;
+}
+.b-alanews a:hover, .b-alanews a:active{
+	color: #000000;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------------*/
+.gerb{
+	position: absolute;
+	top: 29px;
+	left: -105px;
+
+}
+h1.site-ttl{
+	top: 37px;
+	background: none;
+	border: none;
+}
+.b-top, .b-leftop, .b-rightop{
+	height: 210px;
+}
+.b-top{
+	border-bottom: 3px solid #A8A8A8;
+	margin-bottom: 3px;
+}
+
+.b-title{
+	position: relative;
+	height: 101px;
+	padding-top: 0;
+	text-align: center;
+}
+
+.b-search{
+	height: 86px;
+}
+
+
+
+.about, .b-developer, .b-copyright{
+	bottom: 62px;
+}
+
+.b-map{
+	top: 55px;
+	background: none;
+}
+.b-main{
+	border-top: 1px solid #A8A8A8;
+	padding-top: 20px;
+	border-bottom: 1px solid #A8A8A8;
+	margin-bottom: 3px;
+}
+.b-bottom{
+	border-top: 3px solid #A8A8A8;
+}
+.b-alanews{
+	background: none;
+	border: 2px solid #D0D7D3;
+}
+.b-alanews-ttl{
+	margin-left: -42px;
+	border: none;
+}
+.alanews-ttl{
+	background: none;
+	color: #000000;
+}
+h2{
+	font-weight: bold;
+}
+h1, h1 span{
+	background: none;
+	border: none;
+}
+.b-sinput{
+	background: none;
+}
+.sinput{
+	border: 1px solid #A8A8A8;
+	padding: 1px 5px 2px 5px;
+}
+.b-sbutton{
+	top: 57px;
+}
+.b-breadcrumbs{
+	background: none;
+	border: none;
+	padding: 0px 60px 20px 39px;
+}
+a.menu1-link:link, a.menu1-link:visited{
+	background: none;
+	color: #223A35;
+	text-decoration: none;
+}
+a.menu1-link:hover, a.menu1-link:active{
+	background: none;
+	color: #223A35;
+	text-decoration: underline;
+}
+.menu1-act{
+	background: none;
+	font-weight: bold;
+}
+a.menu2-link:link, a.menu2-link:visited{
+	background: none;
+	color: #223A35;
+	text-decoration: underline;
+}
+a.menu2-link:hover, a.menu2-link:active, .act2{
+	background: none;
+	color: #223A35;
+	text-decoration: none;
+}
+.menu2-act{
+	background: none;
+	color: #223A35;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.menu2-act:link, a.menu2-act:visited{
+	background: none;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.menu2-act:hover, a.menu2-act:active{
+	text-decoration: none;
+	background: none;
+	font-weight: bold;
+}
+
+
+.text ul{
+	background: none;
+	margin-left: 10px;
+}
+.text ol{
+	margin-left: 2x0px;
+}
+.text ul li{
+	background: none;
+	list-style-type: square;
+	padding: 0 0 16px 10px;
+}
+
+.messages, .text .messages-list{
+	color: #223A35;
+}
+
+.text .messages li.success, .text .messages li.error{
+	color: #223A35;
+	padding: 0 0 16px 60px;
+	list-style-type: none;
+}
+.text .sitemap li{
+	background: none;
+}
+.text a:link, .text a:visited{
+	color: #223A35;
+	text-decoration: underline;
+}
+.text a:hover, .text a:active{
+	color: #223A35;
+	text-decoration: none;
+}
+.text li.descendant{
+	   background: none;
+    padding: 0 0 15px 10px;
+}
+
+
+
+
+.b-menu{
+	display: none;
+}
+
+.b-mleft{
+	display: none;
+}
+.b-mright{
+	width: 100%;
+	margin-left: 0;
+}
