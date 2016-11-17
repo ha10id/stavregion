@@ -55,6 +55,7 @@
   app.post('/api/menu', api.addMenu);
   app.put('/api/menuchildren/:id', api.addMenuChildren);
   app.get('/api/menu', api.listMenu);
+  app.get('/api/news', api.listNews);
   // app.put('/api/post/:id', api.editPost);
   // app.delete('/api/post/:id', api.deletePost);
   // app.get('*', routes.index);

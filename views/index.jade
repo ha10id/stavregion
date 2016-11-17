@@ -117,90 +117,103 @@ block body
         li.menu-open_li
           a(href="/region/", class="menu-open_link") Новое на сайтах
 
-  div.container(style="width: 100%; background-color: white; padding-top: 5px")
-    row
+  div.container.content
+    .row
       <!-- LEFT PANEL -->
-      div.col-ws-2.col-md-2.col-lg-2.left-panel
+      .col-ws-2.col-md-2.col-lg-2.left-panel
         aside
-          row
+          .row
             span.db.col-sm-12.aside_title
-              |Портал органов местного самоуправления
-          row
+              |Портал органов государственной власти
+          .row
             .col-sm-12.aside_logo
               a(href="/")
                 img(src="img/gerb.png", alt="герб Ставрополя")
-          row
+          .row
             .col-sm-12
-              div.aside_menu-btn.ib(ng-click="showDialog()")
+              .aside_menu-btn.ib(ng-click="showDialog()")
                 img(src="img/menu-icon.png", alt="")
                 span.aside_menu-btn_title Меню
-          row
-            .col-sm-12.aside_title2
+          .row
+            .col-sm-12.aside_title2(style="margin-top: 0; padding-top: 0")
               span.aside_title2_span Ставропольский край
+          .row
+            ul.aside_menu-list.col-sm-12
+              li.aside_menu-list_li.aside_menu-list_li_yellow
+                a.aside_menu-list_link(href="http://portal.stavinvest.ru/") Инвестиционный портал
+              li.aside_menu-list_li.aside_menu-list_li_blue
+                a.aside_menu-list_link(href="/polls/") Опросы населения ставропольского края
+              li.aside_menu-list_li.aside_menu-list_li_blue
+                a.aside_menu-list_link(href="/tenders/") Государственный заказ
+              li.aside_menu-list_li.aside_menu-list_li_blue
+                a.aside_menu-list_link(href="http://12dekabrya.ru/") Конституция рф
+              li.aside_menu-list_li.aside_menu-list_li_blue
+                a.aside_menu-list_link(href="http://www.atk26.ru/") Антитеррористическая деятельность
+
       <!-- MIDDLE PANEL -->
-      div.col-sm-12.col-ws-8.col-md-8.col-lg-8.middle-panel
-        row
-          //- img(src='img/search.jpg', syle="height: 40px !important")
-          h4(style="text-align: right")
-            b Техническая поддержка: (8652) 748 768
-        row.banner-panel
-          .col-md-3
-            img.img-responsive(src="img/8.jpg", alt="")
-          .col-md-3
-            img.img-responsive(src="img/7.jpg", alt="")
-          .col-md-3
-            img.img-responsive(src="img/9.jpg", alt="")
-          .col-md-3
-            img.img-responsive(src="img/6.jpg", alt="")
-          .clear
-        <!-- NAVIGATION BAR -->
-        row
-          .navbar.navbar-default(style="padding: 0; margin: 0")
-            .container-fluid(style="padding: 0; margin: 0")
-              .navbar-collapse.collapse
-                ul.nav.navbar-nav.navbar-center
-                  li
-                    a(href="/") новости
-                  li
-                    a(href="/") галерея
-                  li
-                    a(href="/") советы
-                  li
-                    a(href="/") изменения в законодательстве
-                  li
-                    a(href="/") полезно знать
-                  li
-                    a(href="/") развитие портала
-        <!-- BODY -->
-        row
-          div.documents(ng-view, style="display: block !important;")
-      <!-- RIGHT PANEL -->
-      div.col-ws-2.col-md-2.col-lg-2.right-panel
-        row
-          // кнопки сверху справа
-          button.btn.btn-info.btn-block.btn-menu форум
-          button.btn.btn-info.btn-block.btn-menu обратная связь
-          button.btn.btn-info.btn-block.btn-menu контакты
-          button.btn.btn-warn.btn-block.btn-menu
-            img(src="img/glass-icon.png", alt="версия для слабовидящих")
-        row
-          // календарь
-          div(style="display:inline-block; min-height:260px; margin-top: 10px;")
-            div.well.well-sm(datepicker-append-to-body="true", uib-datepicker, ng-model="dt", datepicker-options="options")
-        //- row
-        //-   // часики
-        //-   div.col-sm-6(style="padding-top: 11px; border: 1px solid white;background-color: #78BEE0;height: 80px")
-        //-     p(style="font-size: 2.7em;color: white;") 14 окт
-        //-   div.col-sm-6(style="padding-top: 11px; border: 1px solid white;background-color: #78BEE0;height: 80px")
-        //-     p(style="font-size: 2.7em;color: white;") 11:20
-        row
-          // новости
-          div.col-sm-12(style="border: 1px solid white;background-color: #78BEE0;height: 40px")
-            p(style="font-size: 2em;color: white;") Новости:
-            div(ng-repeat="n in [42, 43, 44, 45] track by $index")
-              |{{n}}
+      .col-ws-9.col-md-8.col-lg-9.right_content
+        header
+          .row
+            .col-sm-12
+              .row
+                .col-sm-4
+                  a.lblue_btn(href="/vacancy/vacancy_info/") Банк кадровых возможностей
+                .col-sm-4
+                  a.lblue_btn(href="/services/") Государственные услуги
+                .col-sm-4
+                  a.lblue_btn(href="/opendata/") Открытые данные
+          <!-- BODY -->
+          .row
+            .col-sm-12
+              span.right Техническая поддержка:
+                b (8652) 748 768
+            .clear
+          .row
+            .col-sm-4
+              form(method="post", action="/search/")
+                div(style="display:none")
+                  input#csrf-token(type="hidden", name="csrfmiddlewaretoken", value="2c2431d0efbf37db40288c6dc65cb9d5")
+                  input(type="text", name="search", class="search__input", placeholder="Поиск")
+            .col-sm-8
+              .row
+                .col-sm-8
+                  a.enter-link(href="http://sv.stavregion.ru/")
+                    span.right.enter-link_span версия для слабовидящих
+                    img.right.header-icon__glass(src="/_s_/app/img/glass-icon.png", alt="glasses")
+                    .clear
+                .col-sm-4
+                  a.enter-link(href="/accounts/login/")
+                    span.right.enter-link_span Вход
+                    img.right.header-icon__glass(src="/_s_/app/img/enter-icon.png", alt="enter-icon")
+        <!-- end header -->
+        section.news(ng-view)
+      //- <!-- RIGHT PANEL -->
+      //- div.col-ws-2.col-md-2.col-lg-2.right-panel
+      //-   row
+      //-     // кнопки сверху справа
+      //-     button.btn.btn-info.btn-block.btn-menu банк кадровых возможностей
+      //-     button.btn.btn-info.btn-block.btn-menu государственные услуги
+      //-     button.btn.btn-info.btn-block.btn-menu открытые данные
+      //-     button.btn.btn-warn.btn-block.btn-menu
+      //-       img(src="img/glass-icon.png", alt="версия для слабовидящих")
+      //-   row
+      //-     // календарь
+      //-     div(style="display:inline-block; min-height:260px; margin-top: 10px;")
+      //-       div.well.well-sm(datepicker-append-to-body="true", uib-datepicker, ng-model="dt", datepicker-options="options")
+      //-   //- row
+      //-   //-   // часики
+      //-   //-   div.col-sm-6(style="padding-top: 11px; border: 1px solid white;background-color: #78BEE0;height: 80px")
+      //-   //-     p(style="font-size: 2.7em;color: white;") 14 окт
+      //-   //-   div.col-sm-6(style="padding-top: 11px; border: 1px solid white;background-color: #78BEE0;height: 80px")
+      //-   //-     p(style="font-size: 2.7em;color: white;") 11:20
+      //-   row
+      //-     // новости
+      //-     div.col-sm-12(style="border: 1px solid white;background-color: #78BEE0;height: 40px")
+      //-       p(style="font-size: 2em;color: white;") Новости:
+      //-       div(ng-repeat="n in [42, 43, 44, 45] track by $index")
+      //-         |{{n}}
     <!-- FOOTER -->
-    row
+    .row
       footer
         img(src="img/22.jpg")
   <!-- SCRIPTS -->
