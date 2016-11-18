@@ -1,44 +1,7 @@
-.row
-	.col-sm-12
-		span.right_content_header Последние новости
-		.row
-			.col-lg-4.col-ws-3.col-sm-12.news__one(ng-repeat="say in news")
-				a.news__one_img_block(href="/readnews")
-					img.news__one_img.hidden-xs(src='media/{{say.thumbnail}}')
-					.go-top
-						p {{say.slug}}
-
-				span.news__one_date {{say.creation_date | date}}
-				a.news__one_title(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/") {{say.title}}
-			//- .col-lg-4.col-ws-3.col-sm-12.news__one
-			//- 	a.news__one_img_block(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/")
-			//- 		img.news__one_img.hidden-xs(src="img/gerb.png")
-			//- 		.go-top
-			//- 			p В 2017 году администрация города Ставрополя предполагает перевести в электронный вид и предоставлять через региональный портал «Госуслуги» 100% муниципальных услуг.
-
-			//- 	span.news__one_date 15 ноября 2016
-			//- 	a.news__one_title(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/") КРАЕВОЙ ЦЕНТР ПЛАНИРУЕТ ПОЛНОСТЬЮ ПЕРЕЙТИ НА ЭЛЕКТРОННЫЕ ГОСУСЛУГИ
-			//- .col-lg-4.col-ws-3.col-sm-12.news__one
-			//- 	a.news__one_img_block(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/")
-			//- 		img.news__one_img.hidden-xs(src="img/gerb.png")
-			//- 		.go-top
-			//- 			p В 2017 году администрация города Ставрополя предполагает перевести в электронный вид и предоставлять через региональный портал «Госуслуги» 100% муниципальных услуг.
-
-			//- 	span.news__one_date 15 ноября 2016
-			//- 	a.news__one_title(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/") КРАЕВОЙ ЦЕНТР ПЛАНИРУЕТ ПОЛНОСТЬЮ ПЕРЕЙТИ НА ЭЛЕКТРОННЫЕ ГОСУСЛУГИ
-			//- .col-lg-4.col-ws-3.col-sm-12.news__one
-			//- 	a.news__one_img_block(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/")
-			//- 		img.news__one_img.hidden-xs(src="img/gerb.png")
-			//- 		.go-top
-			//- 			p В 2017 году администрация города Ставрополя предполагает перевести в электронный вид и предоставлять через региональный портал «Госуслуги» 100% муниципальных услуг.
-
-			//- 	span.news__one_date 15 ноября 2016
-			//- 	a.news__one_title(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/") КРАЕВОЙ ЦЕНТР ПЛАНИРУЕТ ПОЛНОСТЬЮ ПЕРЕЙТИ НА ЭЛЕКТРОННЫЕ ГОСУСЛУГИ
-			//- .col-lg-4.col-ws-3.col-sm-12.news__one
-			//- 	a.news__one_img_block(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/")
-			//- 		img.news__one_img.hidden-xs(src="img/gerb.png")
-			//- 		.go-top
-			//- 			p В 2017 году администрация города Ставрополя предполагает перевести в электронный вид и предоставлять через региональный портал «Госуслуги» 100% муниципальных услуг.
-
-			//- 	span.news__one_date 15 ноября 2016
-			//- 	a.news__one_title(href="/news/2016/11/15/kraevoj-centr-planiruet-polnostyu-perejti-na-elekt/") КРАЕВОЙ ЦЕНТР ПЛАНИРУЕТ ПОЛНОСТЬЮ ПЕРЕЙТИ НА ЭЛЕКТРОННЫЕ ГОСУСЛУГИ
+div.col-lg-4.col-ws-3.col-sm-12.news__one(ng-repeat="item in news")
+    a.news__one_img_block(href="{{item.excerpt}}/")
+        img(src="/media/{{item.thumbnail}}", class="news__one_img.hidden-xs")
+        div.go-top
+            p {{item.slug}}
+        span.news__one_date {{item.creation_date|date}}
+        a(href="{{item.excerpt}}/", class="news__one_title") {{item.title}}

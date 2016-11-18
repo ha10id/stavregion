@@ -2,14 +2,18 @@ doctype html
 html(ng-app="myApp")
   head
     meta(charset='utf8')
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="cache-control", content="no-cache")
+    meta(http-equiv="expires", content="0")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     base(href='/')
-    title Органы местного самоуправления
+    title Портал органов государственной власти Ставрополького края
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="Description", content="Ставропольский край: официальный портал органов государственной власти")
+    link(href="/_s_/css/reset.css?1413312208", rel="stylesheet", type="text/css")
     link(rel='stylesheet', href='css/bootstrap.min.css')
-    link(rel='stylesheet', href='libs/angular-bootstrap/ui-bootstrap-csp.css')
     link(rel='stylesheet', href='css/app.css')
-    link(rel='stylesheet', href='css/menu.css')
-    link(rel='stylesheet', href='css/news.css')
-    //- link(rel='stylesheet', href='_s_/app/css/main.css')
+    link(href="/_s_/app/css/owl.carousel.css", rel="stylesheet")
+    link(href="/_s_/app/css/owl.theme.default.min.css", rel="stylesheet")
   body
     block body
