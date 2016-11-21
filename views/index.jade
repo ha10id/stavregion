@@ -148,9 +148,9 @@ block body
                 a.aside_menu-list_link(href="http://12dekabrya.ru/") Конституция рф
               li.aside_menu-list_li.aside_menu-list_li_blue
                 a.aside_menu-list_link(href="http://www.atk26.ru/") Антитеррористическая деятельность
-          //- div.row.hidden-xs.hidden-xm
-          //-   .col-sm-12
-          //-     a(href="https://gosmonitor.ru/widget?id=322&rebuild=1&no_visit_count=1&no_redir=1&field_mobid=322", class="aside_bottom_btn", target="_blank") Оставьте свой отзыв о работе сайта
+          div.row.hidden-xs.hidden-xm
+            .col-sm-12
+              a(href="https://gosmonitor.ru/widget?id=322&rebuild=1&no_visit_count=1&no_redir=1&field_mobid=322", class="aside_bottom_btn", target="_blank") Оставьте свой отзыв о работе сайта
       div.aside_end
       <!-- MIDDLE PANEL -->
       div.col-ws-9.col-md-8.col-lg-9.right_content.countur
@@ -193,17 +193,17 @@ block body
             div.col-sm-12
               span.right_content_header Последние новости
           div.row(ng-view)
-          div.row
-            a(href="/news/", class="news__all_link") Посмотреть все новости
-        <!-- CARUSEL -->
-        section.carousel.sources
-          div(style="height: 305px")
-            div.uib-carousel(active="active", interval="myInterval", no-wrap="noWrapSlides")
-              div.uib-slide(ng-repeat="slide in slides track by slide.id", index="slide.id")
-                img(ng-src="{{slide.image}}", style="margin:auto;")
-                div.carousel-caption
-                  h4 Slide {{slide.id}}
-                  p {{slide.text}}
+          //- div.row
+          //-   a(href="/news/", class="news__all_link") Посмотреть все новости
+          //- <!-- CARUSEL -->
+          //- section.carousel.sources
+          //-   div(style="height: 305px")
+          //-     div.uib-carousel(active="active", interval="myInterval", no-wrap="noWrapSlides")
+          //-       div.uib-slide(ng-repeat="slide in slides track by slide.id", index="slide.id")
+          //-         img(ng-src="{{slide.image}}", style="margin:auto;")
+          //-         div.carousel-caption
+          //-           h4 Slide {{slide.id}}
+          //-           p {{slide.text}}
 
 
           //- div.row.carousel__row
@@ -350,9 +350,7 @@ block body
           //-         a(href="http://www.shmr.ru/", class="carousel__link")
           //-           img(src="/_s_/app/img/sources/shpak.png", alt="", class="carousel__img")
           //-           span.carousel__title Шпаковский район
-
   <!-- SCRIPTS -->
-  script(src="/_s_/js/jquery-1.9.1.min.js")
   script(src='libs/angular/angular.min.js')
   script(src='libs/locale-ru-ru.js')
   script(src='libs/angular-route/angular-route.min.js')
@@ -364,6 +362,6 @@ block body
   script(src='js/controllers.js')
   script(src='js/filters.js')
   script(src='js/directives.js')
-  //- script(src='js/components.js')
-  script(src="/_s_/app/js/owl.carousel.min.js")
+  script(src='js/components.js')
+
 
