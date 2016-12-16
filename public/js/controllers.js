@@ -1,11 +1,23 @@
 // Контроллеры
 
 // главная страница
-function IndexCtrl($rootScope, $scope, $http, modalService, $log) {
+function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
+  $scope.myInterval = 5000;
+  $scope.noWrapSlides = false;
+  $scope.active = 0;
+  // var slides = $scope.slides =[];
+  var currIndex = 0;
+
+  $http.get('/api/regions').
+    success(function(data, status, headers, config) {
+      $scope.slides = data;
+    });
+
   $http.get('/api/news').
     success(function(data, status, headers, config) {
       $scope.news = data;
     });
+
   $rootScope.showMenu = function() {
     $log.info('click!');
     alert('click!');
@@ -18,6 +30,11 @@ function IndexCtrl($rootScope, $scope, $http, modalService, $log) {
     customClass: getDayClass,
     minDate: new Date(),
     showWeeks: false
+  };
+
+  $scope.GetNews = function(item) {
+    $log.info(item);
+   $location.url("/readPost/"+item);
   };
 
   function getDayClass(data) {
@@ -68,9 +85,9 @@ function AddPostCtrl($scope, $http, $location) {
 }
 
 function ReadPostCtrl($scope, $http, $routeParams) {
-  $http.get('/api/post/' + $routeParams.id).
+  $http.get('/api/news/' + $routeParams.id).
   success(function(data) {
-    $scope.post = data.post;
+    $scope.news = data;
   });
 }
 
@@ -101,6 +118,49 @@ function DeletePostCtrl($scope, $http, $location, $routeParams) {
       $location.url('/');
     });
   };
+
+// страница администрирования
+function AdminPanelCtrl($scope, $uibModal, $log) {
+  'use strict';
+  // $scope.users = Users.query();
+  // $scope.categories = Categories.query();
+  // $scope.goverments = Goverments.query();
+
+  // $scope.status = {
+  //   isFirstOpen: true,
+  //   oneAtATime: true,
+  //   isItemOpen: [true]
+  // };
+
+  // $scope.users_group = [
+  // {id: 0, name: "гость"},{id: 1, name: "пользователь"},{id: 2, name: "модератор"},{id: 3, name: "администратор"}
+  // ];
+
+  // $scope.user =[];
+
+  // $log.info('-----admin panel controller---------------');
+  // $log.info($scope.goverments);
+
+  // $scope.saveUser = function(user) {
+  //   // $log.info(user.id);
+  //   // $scope.$apply(function(){
+  //     var groupObject = user.group;
+  //     user.group = groupObject.id;
+  //     $log.info(user);
+  //   // user.group = groupObject;
+  //   $log.info('выбранная группа: ', user.group);
+  //   user.group = groupObject;
+  //   // })
+  // }
+  // // функция сохранения обращения
+  // $scope.editGoverment = function (ogv_id) {
+  //   // ngDialog.open({ template: 'popupTmpl.html', className: 'ngdialog-theme-default' });
+  //   $log.info("delete!", ogv_id);
+  // };
+  // $scope.showForm = true;
+  // $log.info("click!", ogv_id);
+}
+
 
   $scope.home = function () {
     $location.url('/');

@@ -1,7 +1,30 @@
+span.right_content_header
+    b Последние новости
 div.col-lg-4.col-ws-3.col-sm-12.news__one(ng-repeat="item in news")
     a.news__one_img_block(href="{{item.excerpt}}/")
         img(src="/media/{{item.thumbnail}}", class="news__one_img.hidden-xs")
         div.go-top
-            p {{item.slug}}
-        span.news__one_date {{item.creation_date|date}}
-        a(href="{{item.excerpt}}/", class="news__one_title") {{item.title}}
+            p {{item.excerpt}}
+    span.news__one_date
+        b {{item.publication_date|date}}
+    a(ng-click="GetNews(item.id)", class="news__one_title") {{item.title}}
+
+row
+    span.news__all_link Посмотреть другие новости
+div.col-sm-12
+
+    div.row
+        div.col-sm-12
+            span.right_content_header Другие источники
+hr
+div.col-md-12(style="height: 305px")
+    div(uib-carousel,interval="myInterval", active="activeSlide")
+        div(uib-slide,ng-repeat="slide in slides", index="$index")
+            a(href="{{slide.href}}")
+                img(ng-src="{{slide.img}}", style="margin:auto;height: 170px")
+                div.carousel-caption
+                h4 {{slide.title}}
+
+hr
+div.col-md-12(style="height: 305px")
+    span.right_content_header Последние обновления

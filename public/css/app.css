@@ -159,6 +159,17 @@ footer {
   min-width: 970px !important;
 }
 
+.right_content{
+  padding: 0 30px;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+
 .middle-panel {
   margin: 0;
   padding-left: 5px;
@@ -198,7 +209,7 @@ img {
 aside {
   background: url(../img/bg1.jpg);
   background-size: cover;
-  height: 1080px;
+  height: 1266px;
 }
 .txt-left {
   text-align: left;
@@ -258,7 +269,7 @@ aside {
   width: 90px;
   height: 90px;
   margin: 0 auto;
-  background: #78BEE0;
+  background: #0084fe;
   -webkit-border-radius: 15px;
   border-radius: 15px;
   text-align: center;
@@ -279,7 +290,7 @@ aside {
   font-size: 1.1em;
 }
 .aside_menu-btn:hover {
-  background: #42ADC9; /*#0255a2;*/
+  background: #0255a2;
 }
 .aside_logo {
   text-align: center;
@@ -476,17 +487,4 @@ aside {
       display: none !important;
     }
   }
-/*
-@media only screen and (max-width: 767px) {
-    img.hd {
-        display: none !important;
-    }
-    img.banner {
-        display: none !important;
-    }
-    a.navbar-brand {
-        visibility: visible;
-        font-weight: bold;
-    }
-}
-*/
+

@@ -156,6 +156,7 @@
   text-transform: uppercase;
   text-decoration: underline;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .news__all_link:hover {
   text-decoration: none;

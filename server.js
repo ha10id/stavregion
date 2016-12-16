@@ -56,10 +56,13 @@
   app.put('/api/menuchildren/:id', api.addMenuChildren);
   app.get('/api/menu', api.listMenu);
   app.get('/api/news', api.listNews);
+  app.get('/api/news/:id', api.news);
+  app.get('/api/regions', api.listRegions);
+
   // app.put('/api/post/:id', api.editPost);
   // app.delete('/api/post/:id', api.deletePost);
   // app.get('*', routes.index);
-
+  app.get('*', routes.index);
 // Start Server =============================================
 
   http.createServer(app).listen(app.get('port'), function () {

@@ -1,5 +1,7 @@
 var Menu = require('./models/Menu.js');
 var News = require('./models/News.js');
+var Region = require('./models/Region.js');
+var Newstext = require('./models/Newstext.js');
 
 exports.addMenu = function (req, res) {
   var MenuItem = new Menu(req.body);
@@ -50,26 +52,68 @@ function getMenu(url) {
 function mapMenuItem(item) {
   // return new Promise((resolve, reject) => {
     var html = '';
-    html += '<li> class="menu-open_li"';
-    html += '<a href="' + item.url + '" class="menu-open_link">' + item.title + '</a></li>';
-    return html;
-};
+    if (item.children.length > 0) {
+      html += '<li class="menu-open_li menu-open_li_dropdown">';
+      html += '<a href="' + item.url + '" class="menu-open_dropdown_menu_link">' + item.title + '</a>';
+      html += '<ul class="menu-open_dropdown_menu">';
+    } else {
 
-exports.listMenu = ((req, res) => {
-  getMenu().then(
-    result => {
-      var html = '';
-      result.forEach((item, i) => {
-        html += mapMenuItem(item);
-      });
-      console.log(html);
-      res.send(html);
-    },
-    error => {
-      res.send(error)
+      html += '<li class="menu-open_li"><a href="' + item.url + '" class="menu-open_link">' + item.title + '</a></li>';
     }
+    return html;
+  };
+
+  function mapToMenu(items) {
+    var html = '';
+    items.forEach((its, i) => {
+
+    // console.log(its.title);
+    if( its.children.length === 0 ) {
+      html += '<li class="menu-open_li"><a href="'+ its.url +'" class="menu-open_link">'+ its.title +'</a></li>';
+    } else {
+      html += '<li class="menu-open_li menu-open_li_dropdown">';
+      html += '<a href="'+ its.url +'" class="menu-open_dropdown_menu_link">'+ its.title +'</a>'
+      html += '<ul class="menu-open_dropdown_menu">'
+      mapToMenu(its.children);
+      html += '</ul>';
+      html += '</li>';
+    }
+  });
+    console.log(html);
+  };
+
+  exports.listRegions = function (req, res) {
+    'use strict';
+    Region.find(function(err, regions) {
+      if (err) {
+        res.send(err);
+      }
+        res.json(regions); // return all documents in JSON format
+      });
+  };
+
+  exports.listMenu = ((req, res) => {
+    getMenu().then(
+      result => {
+        var html = '';
+        mapToMenu(result);
+    //   result.forEach((item, i) => {
+
+    //   if(item.children.length > 0) {
+    //     console.log(' - ', item.children)
+    //   } else {
+    //     console.log(item);
+    //   }
+    //   // html += mapMenuItem(item);
+    // });
+    // console.log(html);
+    res.send(result);
+  },
+  error => {
+    res.send(error)
+  }
   );
-});
+  });
 
 // exports.listMenu = ((req, res) => {
 //   var html = '<ul> class="menu-open" ';
@@ -110,8 +154,11 @@ exports.listNews = function (req, res) {
         id: data.id,
         title: data.title,
         slug: data.slug,
+        excerpt: data.excerpt,
         thumbnail: data.thumbnail,
-        creation_date: data.creation_date
+        creation_date: data.creation_date,
+        publication_date: data.publication_date,
+        content_id: data.content_id
       };
     });
       res.json(news); // return all documents in JSON format
@@ -133,15 +180,34 @@ exports.posts = function (req, res) {
   });
 };
 // GET ONE
+// exports.post = function (req, res) {
+//   var id = req.params.id;
+//   Newstext.find({cmsplugin_ptr_id: id}, (err, news) {
+//     res.json(news);
+//   })
+// };
+exports.news = function (req, res) {
+  var id = req.params.id;
+  console.log(id);
+  News.findOne({id: id}, function(err, body) {
+      if (err) {
+        res.send(err);
+      }
+      console.log(body);
+      res.json(body); // return all categorie
+});
+};
+
 exports.post = function (req, res) {
   var id = req.params.id;
-  if (id >= 0 && id < data.posts.length) {
-    res.json({
-      post: data.posts[id]
-    });
-  } else {
-    res.json(false);
-  }
+  console.log(id);
+  Newstext.findOne({cmsplugin_ptr_id: id}, function(err, body) {
+      if (err) {
+        res.send(err);
+      }
+      console.log(body);
+      res.json(body); // return all categorie
+});
 };
 // POST
 exports.addPost = function (req, res) {

@@ -1,5 +1,5 @@
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['ngRoute', 'ngSanitize', 'ui.bootstrap', 'myApp.filters', 'myApp.services', 'myApp.directives']).
+angular.module('myApp', ['ngRoute', 'ngSanitize', 'ui.bootstrap', 'ngAnimate', 'myApp.filters', 'myApp.services', 'myApp.directives']).
 // config(["$provide", function($provide){
 //   // Use the `decorator` solution to substitute or attach behaviors to
 //   // original service instance; @see angular-mocks for more examples....
@@ -45,6 +45,10 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
   //   templateUrl: 'partials/deletePost',
   //   controller: DeletePostCtrl
   // }).
+  when('/adminPanel', {
+    templateUrl: 'partials/adminPanel',
+    controller: AdminPanelCtrl
+  }).
   otherwise({
     redirectTo: '/'
   });

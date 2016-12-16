@@ -5,24 +5,21 @@ var Schema   = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 // define our document model
-var News = new Schema({
-	'id': Number,
-	'title': String,
-	'slug': Number,
-	'body': String,
-	'excerpt': String,
-	'thumbnail': String,
-	'creation_date': Date,
-	'publication_date': Date,
-	'content_id': Number
+var Newstext = new Schema({
+	'cmsplugin_ptr_id': Number,
+	'body': String
 });
 
+Newstext.virtual('id')
+    .get(function() {
+        return this._id.toHexString();
+});
 
-News.pre('save', function(next) {
+Newstext.pre('save', function(next) {
     // this.keywords = extractKeywords(this.data);
     console.log('news presave', this._id);
     next();
 });
 
 
-module.exports = mongoose.model('News', News);
+module.exports = mongoose.model('Newstext', Newstext);

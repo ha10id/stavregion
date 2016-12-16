@@ -153,7 +153,7 @@ block body
               a(href="https://gosmonitor.ru/widget?id=322&rebuild=1&no_visit_count=1&no_redir=1&field_mobid=322", class="aside_bottom_btn", target="_blank") Оставьте свой отзыв о работе сайта
       div.aside_end
       <!-- MIDDLE PANEL -->
-      div.col-ws-9.col-md-8.col-lg-9.right_content.countur
+      div.col-ws-9.col-md-8.col-lg-9.right_content(style="overflow: scroll !;")
         <!-- UP PANEL -->
         header
           div.row
@@ -191,170 +191,18 @@ block body
         section.news
           div.row
             div.col-sm-12
-              span.right_content_header Последние новости
+
           div.row(ng-view)
-          //- div.row
-          //-   a(href="/news/", class="news__all_link") Посмотреть все новости
-          //- <!-- CARUSEL -->
-          //- section.carousel.sources
-          //-   div(style="height: 305px")
-          //-     div.uib-carousel(active="active", interval="myInterval", no-wrap="noWrapSlides")
-          //-       div.uib-slide(ng-repeat="slide in slides track by slide.id", index="slide.id")
-          //-         img(ng-src="{{slide.image}}", style="margin:auto;")
-          //-         div.carousel-caption
-          //-           h4 Slide {{slide.id}}
-          //-           p {{slide.text}}
+          div.row
 
 
-          //- div.row.carousel__row
-          //-   div.col-sm-12
-          //-     div.row
-          //-       div.col-sm-12
-          //-         span.right_content_header Другие источники
-          //-     div.owl-sources
-          //-       div
-          //-         a(href="http://www.aleksadmin.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/aleks.png", alt="", class="carousel__img")
-          //-           span.carousel__title Александровский район
-          //-       div
-          //-         a(href="http://www.andropovskiy.ru", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/androp.png", alt="", class="carousel__img")
-          //-           span.carousel__title Андроповский район
-
-          //-       div
-          //-         a(href="http://www.aamrsk.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/apanas.png", alt="", class="carousel__img")
-          //-           span.carousel__title Апанасенковский район
-
-          //-       div
-          //-         a(href="http://www.arzgiradmin.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/arzgir.png", alt="", class="carousel__img")
-          //-           span.carousel__title Арзгирский район
-
-          //-       div
-          //-         a(href="http://www.abmrsk.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/blagod.png", alt="", class="carousel__img")
-          //-           span.carousel__title Благодарненский район
-
-          //-       div
-          //-         a(href="http://www.budennovsk-rayon.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/buden.png", alt="", class="carousel__img")
-          //-           span.carousel__title Буденновский район
-
-          //-       div
-          //-         a(href="http://www.gmr-sk.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/georg.png", alt="", class="carousel__img")
-          //-           span.carousel__title Георгиевский район
-
-          //-       div
-          //-         a(href="http://www.adm-grsk.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/grach.png", alt="", class="carousel__img")
-          //-           span.carousel__title Грачёвский район
-
-          //-       div
-          //-         a(href="http://www.izobadmin.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/izobil.png", alt="", class="carousel__img")
-          //-           span.carousel__title Изобильненский район
-
-          //-       div
-          //-         a(href="http://www.ipatovo.org/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/ipatov.png", alt="", class="carousel__img")
-          //-           span.carousel__title Ипатовский район
-
-          //-       div
-          //-         a(href="http://www.akmrsk-portal.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/kirov.png", alt="", class="carousel__img")
-          //-           span.carousel__title Кировский район
-
-          //-       div
-          //-         a(href="http://www.akmr-kochubeevskoe.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/kochub.png", alt="", class="carousel__img")
-          //-           span.carousel__title Кочубеевский район
-
-          //-       div
-          //-         a(href="http://www.krasnogvardeiskoe.info/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/krasn.png", alt="", class="carousel__img")
-          //-           span.carousel__title Красногвардейский район
-
-          //-       div
-          //-         a(href="http://www.administraciykmr.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/kursk.png", alt="", class="carousel__img")
-          //-           span.carousel__title Курский район
-
-          //-       div
-          //-         a(href="http://www.adminlmr.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/levok.png", alt="", class="carousel__img")
-          //-           span.carousel__title Левокумский район
-
-          //-       div
-          //-         a(href="http://www.min-vodi.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/miner.png", alt="", class="carousel__img")
-          //-           span.carousel__title Минераловодский городской округ
-
-          //-       div
-          //-         a(href="http://nevadm.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/nevinnomysk.png", alt="", class="carousel__img")
-          //-           span.carousel__title Невинномысск
-
-          //-       div
-          //-         a(href="http://www.anmr-neftekumsk.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/neftekum.png", alt="", class="carousel__img")
-          //-           span.carousel__title Нефтекумский район
-
-          //-       div
-          //-         a(href="http://www.newalexandrovsk.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/novoal.png", alt="", class="carousel__img")
-          //-           span.carousel__title Новоалександровский район
-
-          //-       div
-          //-         a(href="http://www.novoselickoe.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/novos.png", alt="", class="carousel__img")
-          //-           span.carousel__title Новоселицкий район
-
-          //-       div
-          //-         a(href="http://www.petradm.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/petrov.png", alt="", class="carousel__img")
-          //-           span.carousel__title Петровский район
-
-          //-       div
-          //-         a(href="http://www.predgor-ray.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/predg.png", alt="", class="carousel__img")
-          //-           span.carousel__title Предгорный район
-
-          //-       div
-          //-         a(href="http://www.pyatigorsk.org/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/pyatigorsk.png", alt="", class="carousel__img")
-          //-           span.carousel__title г. Пятигорск
-
-          //-       div
-          //-         a(href="http://www.sovadmin.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/sovet.png", alt="", class="carousel__img")
-          //-           span.carousel__title Советский район
-
-          //-       div
-          //-         a(href="http://www.stepnoe.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/stepn.png", alt="", class="carousel__img")
-          //-           span.carousel__title Степновский район
-
-          //-       div
-          //-         a(href="http://www.trunovskiy26raion.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/trunov.png", alt="", class="carousel__img")
-          //-           span.carousel__title Труновский район
-
-          //-       div
-          //-         a(href="http://www.turkmenskiy.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/turkm.png", alt="", class="carousel__img")
-          //-           span.carousel__title Туркменский район
-
-          //-       div
-          //-         a(href="http://www.shmr.ru/", class="carousel__link")
-          //-           img(src="/_s_/app/img/sources/shpak.png", alt="", class="carousel__img")
-          //-           span.carousel__title Шпаковский район
   <!-- SCRIPTS -->
   script(src='libs/angular/angular.min.js')
   script(src='libs/locale-ru-ru.js')
   script(src='libs/angular-route/angular-route.min.js')
   script(src='libs/angular-sanitize/angular-sanitize.min.js')
+  script(src='libs/angular-animate/angular-animate.min.js')
+
   //- script(src='libs/angular-resource/angular-resource.min.js')
   script(src='libs/angular-bootstrap/ui-bootstrap-tpls.js')
   script(src='js/app.js')
