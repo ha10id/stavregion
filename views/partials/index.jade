@@ -1,5 +1,7 @@
 span.right_content_header
-    b Последние новости
+    | Последние новости &nbsp
+    button.btn-default(ng-click="AddNews()") Добавить новость
+
 div.col-lg-4.col-ws-3.col-sm-12.news__one(ng-repeat="item in news")
     a.news__one_img_block(href="{{item.excerpt}}/")
         img(src="/media/{{item.thumbnail}}", class="news__one_img.hidden-xs")
@@ -17,7 +19,7 @@ div.col-sm-12
         div.col-sm-12
             span.right_content_header Другие источники
 hr
-div.col-md-12(style="height: 305px")
+div.col-md-12(style="height: 200px")
     div(uib-carousel,interval="myInterval", active="activeSlide")
         div(uib-slide,ng-repeat="slide in slides", index="$index")
             a(href="{{slide.href}}")
@@ -26,5 +28,26 @@ div.col-md-12(style="height: 305px")
                 h4 {{slide.title}}
 
 hr
-div.col-md-12(style="height: 305px")
-    span.right_content_header Последние обновления
+row
+    div.col-md-12
+        span.right_content_header Последние обновления
+    .col-sm-12
+      .row.last_updates_one
+        .col-sm-1.col-xs-2.txt-right
+          img(src='/_s_/app/img/application__pdf.png', height='46', width='35', alt='')
+        .col-sm-11.col-xs-10
+          .last_updates_desc
+            span.last_updates_date {{dt | date}}
+            span.last_updates_text
+              a(href='{{smnew.href}}') Создать ссылку на файл
+
+    .col-sm-12
+      .row.last_updates_one(ng-repeat="smnew in simplenews")
+        .col-sm-1.col-xs-2.txt-right
+          img(src='/_s_/app/img/application__pdf.png', height='46', width='35', alt='')
+        .col-sm-11.col-xs-10
+          .last_updates_desc
+            span.last_updates_date 16 декабря 2016
+            span.last_updates_text
+              a(href='{{smnew.href}}') {{smnew.title}}
+

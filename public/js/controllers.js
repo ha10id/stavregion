@@ -18,10 +18,18 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
       $scope.news = data;
     });
 
-  $rootScope.showMenu = function() {
-    $log.info('click!');
-    alert('click!');
-  };
+  $http.get('/api/listsimple').
+    success(function(data, status, headers, config) {
+      $scope.simplenews = data;
+    });
+
+  // $scope.news = dataService.query();
+  // $log.info($scope.news);
+  // $rootScope.showMenu = function() {
+  //   $log.info('click!');
+  //   alert('click!');
+  // };
+
 
   $scope.format = 'yyyy/MM/dd';
   $scope.dt = new Date();
@@ -35,6 +43,10 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
   $scope.GetNews = function(item) {
     $log.info(item);
    $location.url("/readPost/"+item);
+  };
+  $scope.AddNews = function() {
+    $log.info('item');
+   $location.url("/addPost/");
   };
 
   function getDayClass(data) {
@@ -60,13 +72,13 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
       backdrop: true,
       keyboard: true,
       modalFade: true,
-      templateUrl: 'menu.html',
+      templateUrl: 'addNews.html',
       size: 'lg'
     };
     var modalOptions = {
       closeButtonText: 'Отмена',
       actionButtonText: 'Отправить',
-      headerText: 'Комментарий'
+      headerText: 'Новость'
     };
     modalService.showModal(modalDefaults, modalOptions).then(function (result) {
       console.info(result);
@@ -76,6 +88,7 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
 
 function AddPostCtrl($scope, $http, $location) {
   $scope.form = {};
+  $scope.image = 'nullphoto.jpg';
   $scope.submitPost = function () {
     $http.post('/api/post', $scope.form).
     success(function(data) {

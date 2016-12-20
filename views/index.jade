@@ -1,5 +1,20 @@
 extends layout
 block body
+  script(type="text/ng-template", id="addNews.html", name="addNews.html")
+    span.modal-body.col-sm-12(style='background-color: #87ABCB')
+      img(src='media/irnews_thumb/nullphoto.jpg', style='height: 120px; weight:120px;')
+      span
+        div
+          label Краткое содержание новости
+          textarea.form-control(ui-tinymce='tinymceOptions', ,='', name='news.title', ng-model='news.title', rows='5')
+          |    textarea( ng-model="tinymceModel")
+          label Полное содержание новости
+          textarea.form-control(name='news.body', ng-model='news.body', rows='15')
+      .modal-footer
+        button.btn(type='button', ng-click='modalOptions.close()') {{modalOptions.closeButtonText}}
+        button.btn.btn-primary(ng-click='modalOptions.ok(comment.body)') {{modalOptions.actionButtonText}}
+
+
   script(type="text/ng-template", id="menu.html", name="menu.html")
     div(id="menu-open" tabindex="-1" role="dialog" aria-labelledby="menuLabel" aria-hidden="true" style="display: block !important; padding-right: 15px; height: 100%")
       button(type="button" class="close" data-dismiss="modal" aria-hidden="true", ng-click="modalOptions.close()") ×
@@ -120,7 +135,7 @@ block body
   div.container.content
     div.row
       <!-- LEFT PANEL -->
-      aside.col-ws-3.col-md-3.col-lg-3
+      aside.col-ws-3.col-md-3.col-lg-3.contur
           div.row
             span.db.col-sm-12.aside_title
               |Портал органов государственной власти
@@ -130,7 +145,7 @@ block body
                 img(src="img/gerb.png", alt="герб Ставрополя")
           div.row
             .col-sm-12
-              div.aside_menu-btn.ib(ng-click="showDialog()")
+              div.aside_menu-btn.ib(ng-click="showMenu()")
                 img(src="img/menu-icon.png", alt="menu")
                 span.aside_menu-btn_title Меню
           div.row
@@ -152,8 +167,9 @@ block body
             .col-sm-12
               a(href="https://gosmonitor.ru/widget?id=322&rebuild=1&no_visit_count=1&no_redir=1&field_mobid=322", class="aside_bottom_btn", target="_blank") Оставьте свой отзыв о работе сайта
       div.aside_end
+
       <!-- MIDDLE PANEL -->
-      div.col-ws-9.col-md-8.col-lg-9.right_content(style="overflow: scroll !;")
+      div.col-ws-9.col-md-8.col-lg-9.right_content
         <!-- UP PANEL -->
         header
           div.row
@@ -192,11 +208,13 @@ block body
           div.row
             div.col-sm-12
 
-          div.row(ng-view)
+          div.row(ng-view, style="overflow: auto")
           div.row
 
 
   <!-- SCRIPTS -->
+  script(src="libs/jquery/dist/jquery.min.js")
+  script(src="libs/tinymce/tinymce.js")
   script(src='libs/angular/angular.min.js')
   script(src='libs/locale-ru-ru.js')
   script(src='libs/angular-route/angular-route.min.js')
@@ -211,5 +229,6 @@ block body
   script(src='js/filters.js')
   script(src='js/directives.js')
   script(src='js/components.js')
-
-
+  script(src="libs/angular-ui-tinymce/src/tinymce.js")
+  script.
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

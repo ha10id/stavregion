@@ -48,17 +48,17 @@
 // Routes ==================================================
   app.get('/', routes.index);
   app.get('/partials/:name', routes.partials);
-
+  app.post('/upload', api.upload);
 // JSON API
-  app.get('/api/posts', api.posts);
-  app.get('/api/post/:id', api.post);
-  app.post('/api/menu', api.addMenu);
-  app.put('/api/menuchildren/:id', api.addMenuChildren);
-  app.get('/api/menu', api.listMenu);
+  // app.get('/api/posts', api.posts);
+  // app.get('/api/post/:id', api.post);
+  // // app.post('/api/menu', api.addMenu);
+  // app.put('/api/menuchildren/:id', api.addMenuChildren);
+  // app.get('/api/menu', api.listMenu);
   app.get('/api/news', api.listNews);
   app.get('/api/news/:id', api.news);
   app.get('/api/regions', api.listRegions);
-
+  app.get('/api/listsimple', api.listSimpleNews);
   // app.put('/api/post/:id', api.editPost);
   // app.delete('/api/post/:id', api.deletePost);
   // app.get('*', routes.index);
