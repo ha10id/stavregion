@@ -1,7 +1,7 @@
 // Контроллеры
 
 // главная страница
-function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
+function IndexCtrl($rootScope, $scope, $http, $location,  modalService, $log) {
   $scope.myInterval = 5000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
@@ -9,19 +9,19 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
   var currIndex = 0;
 
   $http.get('/api/regions').
-    success(function(data, status, headers, config) {
-      $scope.slides = data;
-    });
+  success(function(data, status, headers, config) {
+    $scope.slides = data;
+  });
 
   $http.get('/api/news').
-    success(function(data, status, headers, config) {
-      $scope.news = data;
-    });
+  success(function(data, status, headers, config) {
+    $scope.news = data;
+  });
 
   $http.get('/api/listsimple').
-    success(function(data, status, headers, config) {
-      $scope.simplenews = data;
-    });
+  success(function(data, status, headers, config) {
+    $scope.simplenews = data;
+  });
 
   // $scope.news = dataService.query();
   // $log.info($scope.news);
@@ -42,16 +42,16 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
 
   $scope.GetNews = function(item) {
     $log.info(item);
-   $location.url("/readPost/"+item);
+    $location.url("/readPost/"+item);
   };
   $scope.AddNews = function() {
     $log.info('item');
-   $location.url("/addPost/");
+    $location.url("/addPost/");
   };
 
   function getDayClass(data) {
     var date = data.date,
-      mode = data.mode;
+    mode = data.mode;
     if (mode === 'day') {
       var dayToCheck = new Date(date).setHours(0,0,0,0);
 
@@ -72,7 +72,7 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
       backdrop: true,
       keyboard: true,
       modalFade: true,
-      templateUrl: 'addNews.html',
+      templateUrl: 'mainMenu.html',
       size: 'lg'
     };
     var modalOptions = {
@@ -86,51 +86,104 @@ function IndexCtrl($rootScope, $scope, $http, $location, modalService, $log) {
   };
 }
 
-function AddPostCtrl($scope, $http, $location) {
-  $scope.form = {};
-  $scope.image = 'nullphoto.jpg';
-  $scope.submitPost = function () {
-    $http.post('/api/post', $scope.form).
-    success(function(data) {
-      $location.path('/');
-    });
-  };
-}
+function AddPostCtrl($rootScope, $scope, $http, $location, $log) {
+         var uploader = $scope.uploader = new FileUploader({
+            url: 'upload.php'
+        });
 
-function ReadPostCtrl($scope, $http, $routeParams) {
-  $http.get('/api/news/' + $routeParams.id).
-  success(function(data) {
-    $scope.news = data;
-  });
-}
+        // FILTERS
 
-function EditPostCtrl($scope, $http, $location, $routeParams) {
-  $scope.form = {};
-  $http.get('/api/post/' + $routeParams.id).
-  success(function(data) {
-    $scope.form = data.post;
-  });
+        // a sync filter
+        uploader.filters.push({
+            name: 'syncFilter',
+            fn: function(item /*{File|FileLikeObject}*/, options) {
+                console.log('syncFilter');
+                return this.queue.length < 10;
+            }
+        });
 
-  $scope.editPost = function () {
-    $http.put('/api/post/' + $routeParams.id, $scope.form).
-    success(function(data) {
-      $location.url('/readPost/' + $routeParams.id);
-    });
-  };
-}
+        // an async filter
+        uploader.filters.push({
+            name: 'asyncFilter',
+            fn: function(item /*{File|FileLikeObject}*/, options, deferred) {
+                console.log('asyncFilter');
+                setTimeout(deferred.resolve, 1e3);
+            }
+        });
 
-function DeletePostCtrl($scope, $http, $location, $routeParams) {
-  $http.get('/api/post/' + $routeParams.id).
-  success(function(data) {
-    $scope.post = data.post;
-  });
+        // CALLBACKS
 
-  $scope.deletePost = function () {
-    $http.delete('/api/post/' + $routeParams.id).
-    success(function(data) {
-      $location.url('/');
-    });
-  };
+        uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/, filter, options) {
+            console.info('onWhenAddingFileFailed', item, filter, options);
+        };
+        uploader.onAfterAddingFile = function(fileItem) {
+            console.info('onAfterAddingFile', fileItem);
+        };
+        uploader.onAfterAddingAll = function(addedFileItems) {
+            console.info('onAfterAddingAll', addedFileItems);
+        };
+        uploader.onBeforeUploadItem = function(item) {
+            console.info('onBeforeUploadItem', item);
+        };
+        uploader.onProgressItem = function(fileItem, progress) {
+            console.info('onProgressItem', fileItem, progress);
+        };
+        uploader.onProgressAll = function(progress) {
+            console.info('onProgressAll', progress);
+        };
+        uploader.onSuccessItem = function(fileItem, response, status, headers) {
+            console.info('onSuccessItem', fileItem, response, status, headers);
+        };
+        uploader.onErrorItem = function(fileItem, response, status, headers) {
+            console.info('onErrorItem', fileItem, response, status, headers);
+        };
+        uploader.onCancelItem = function(fileItem, response, status, headers) {
+            console.info('onCancelItem', fileItem, response, status, headers);
+        };
+        uploader.onCompleteItem = function(fileItem, response, status, headers) {
+            console.info('onCompleteItem', fileItem, response, status, headers);
+        };
+        uploader.onCompleteAll = function() {
+            console.info('onCompleteAll');
+        };
+
+        console.info('uploader', uploader);
+};
+
+      function ReadPostCtrl($scope, $http, $routeParams) {
+        $http.get('/api/news/' + $routeParams.id).
+        success(function(data) {
+          $scope.news = data;
+        });
+      }
+
+      function EditPostCtrl($scope, $http, $location, $routeParams) {
+        $scope.form = {};
+        $http.get('/api/post/' + $routeParams.id).
+        success(function(data) {
+          $scope.form = data.post;
+        });
+
+        $scope.editPost = function () {
+          $http.put('/api/post/' + $routeParams.id, $scope.form).
+          success(function(data) {
+            $location.url('/readPost/' + $routeParams.id);
+          });
+        };
+      }
+
+      function DeletePostCtrl($scope, $http, $location, $routeParams) {
+        $http.get('/api/post/' + $routeParams.id).
+        success(function(data) {
+          $scope.post = data.post;
+        });
+
+        $scope.deletePost = function () {
+          $http.delete('/api/post/' + $routeParams.id).
+          success(function(data) {
+            $location.url('/');
+          });
+        };
 
 // страница администрирования
 function AdminPanelCtrl($scope, $uibModal, $log) {
@@ -175,7 +228,7 @@ function AdminPanelCtrl($scope, $uibModal, $log) {
 }
 
 
-  $scope.home = function () {
-    $location.url('/');
-  };
+$scope.home = function () {
+  $location.url('/');
+};
 }

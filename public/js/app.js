@@ -1,5 +1,5 @@
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['ngRoute', 'ngSanitize','ui.tinymce', 'ui.bootstrap', 'ngAnimate', 'myApp.filters', 'myApp.services', 'myApp.directives']).
+angular.module('myApp', ['ngRoute', 'ngSanitize', 'angularFileUpload', 'ui.tinymce', 'ui.bootstrap', 'ngAnimate', 'myApp.filters', 'myApp.services', 'myApp.directives']).
 run(function($rootScope, modalService) {
     console.log("app run");
     // показываем меню
@@ -9,7 +9,7 @@ run(function($rootScope, modalService) {
         backdrop: true,
         keyboard: true,
         modalFade: true,
-        templateUrl: 'menu.html',
+        templateUrl: 'mainMenu.html',
         size: 'lg'
       };
       var modalOptions = {
@@ -20,7 +20,6 @@ run(function($rootScope, modalService) {
       modalService.showModal(modalDefaults, modalOptions).then(function (result) {
         console.info(result);
       });
-
     };
     // настройки редактора
     $rootScope.tinymceOptions = {
