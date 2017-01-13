@@ -1,4 +1,5 @@
-	public/media/
-	public/test.html
-	public/untitled.html
-	public/uploads
+node_modules
+public/media/
+public/uploads/
+public/libs/
+public/_s_/
