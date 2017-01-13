@@ -1,3 +1,4 @@
-base
-node_modules
-public/libs
+	public/media/
+	public/test.html
+	public/untitled.html
+	public/uploads
