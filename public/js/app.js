@@ -101,10 +101,10 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
   //   templateUrl: 'partials/deletePost',
   //   controller: DeletePostCtrl
   // }).
-  // when('/adminPanel', {
-  //   templateUrl: 'partials/adminPanel',
-  //   controller: AdminPanelCtrl
-  // }).
+  when('/adminPanel', {
+    templateUrl: 'partials/adminPanel',
+    controller: AdminPanelCtrl
+  }).
   otherwise({
     redirectTo: '/'
   });

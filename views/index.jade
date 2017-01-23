@@ -14,6 +14,16 @@ block body
         button.btn(type='button', ng-click='modalOptions.close()') {{modalOptions.closeButtonText}}
         button.btn.btn-primary(ng-click='modalOptions.ok(comment.body)') {{modalOptions.actionButtonText}}
 
+  script(type="text/ng-template", id="editMenu.html", name="editMenu.html")
+      span.modal-body.col-sm-12(style='background-color: #87ABCB')
+        div
+          label наименование меню
+          input.form-control(ng-model='menu.title', name='menu.title')
+          label url
+          input.form-control(ng-model='menu.url', name='menu.url')
+      .modal-footer
+        button.btn(type='button', ng-click='modalOptions.close()') {{modalOptions.closeButtonText}}
+        button.btn.btn-primary(ng-click='modalOptions.ok(comment.body)') {{modalOptions.actionButtonText}}
 
   script(type="text/ng-template", id="menu.html", name="menu.html")
     div(id="menu-open" tabindex="-1" role="dialog" aria-labelledby="menuLabel" aria-hidden="true" style="display: block !important; padding-right: 15px; height: 100%")
@@ -163,6 +173,8 @@ block body
                 a.aside_menu-list_link(href="http://12dekabrya.ru/") Конституция рф
               li.aside_menu-list_li.aside_menu-list_li_blue
                 a.aside_menu-list_link(href="http://www.atk26.ru/") Антитеррористическая деятельность
+              li.aside_menu-list_li.aside_menu-list_li_blue
+                a.aside_menu-list_link(href="adminPanel/") Администрирование
           div.row.hidden-xs.hidden-xm
             .col-sm-12
               a(href="https://gosmonitor.ru/widget?id=322&rebuild=1&no_visit_count=1&no_redir=1&field_mobid=322", class="aside_bottom_btn", target="_blank") Оставьте свой отзыв о работе сайта
@@ -230,5 +242,5 @@ block body
   script(src='js/directives.js')
   script(src='js/components.js')
   script(src="libs/angular-ui-tinymce/src/tinymce.js")
-  script.
-    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+script.
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

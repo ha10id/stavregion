@@ -26,7 +26,7 @@ function modalService($uibModal) {
 		keyboard: true,
 		modalFade: true,
 		templateUrl: 'modal/modal.html',
-		size: 'lg'
+		size: 'md'
 	};
 
 	var modalOptions = {

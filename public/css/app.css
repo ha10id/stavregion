@@ -9,6 +9,23 @@
   font-weight: normal;
 }
 
+  .descr { visibility: hidden; }
+  .b:hover + .descr {
+    visibility: visible;
+   }
+
+    TABLE {
+        width: 80%; /* Ширина таблицы */
+        border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    }
+    TD, TH {
+        padding: 3px; /* Поля вокруг содержимого таблицы */
+        border: 1px solid black; /* Параметры рамки */
+    }
+    TH {
+        background: #b0e0e6; /* Цвет фона */
+    }
+
 .my-drop-zone { border: dotted 3px lightgray; }
 .nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
 .another-file-over-class { border: dotted 3px green; }

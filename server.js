@@ -11,6 +11,7 @@
 
   var routes = require('./routes');
   var api    = require('./routes/api');
+  var menu   = require('./routes/api.menu.js');
 
   var http   = require('http');
   var path   = require('path');
@@ -21,7 +22,7 @@
   mongoose.connect(db.url); // connect to our mongoDB database (commented out after you enter in your own credentials)
 
 // all environments
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 3020);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(favicon(__dirname + '/public/img/26.ico'));
@@ -59,9 +60,11 @@
   app.get('/api/news/:id', api.news);
   app.get('/api/regions', api.listRegions);
   app.get('/api/listsimple', api.listSimpleNews);
+  // app.get('/api/admin', admin.menu);
   // app.put('/api/post/:id', api.editPost);
   // app.delete('/api/post/:id', api.deletePost);
-  // app.get('*', routes.index);
+
+  app.get('/api/menus', menu.menusList);
   app.get('*', routes.index);
 // Start Server =============================================
 
