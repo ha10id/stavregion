@@ -1,27 +1,75 @@
 .jumborton
-  .row
-  .col-sm-12
-    .col-sm-6(style="padding: 10px 10px 10px 10px;" )
-      button.btn.btn-info(ng-click="levelback(level)", ng-if="level > 0") Вернуться на предыдущий уровень
-    .row
-    div(ng-repeat="menuitem in menus")
-      .col-sm-8
-        .form-group(style="background-color: #F7F1D9; font-color: #000")
-          label название меню
-          input.form-control(ng-model='menuitem.title', name='title')
-          label url
-          input.form-control(ng-model='menuitem.url', name='url')
-          div(style="background-color: #87ABCB;", ng-if="menuitem.children.length > 0")
-            button.btn.btn-success.form-control(type='button', ng-click="expandmenu(menuitem)") развернуть вложенное меню
-      .col-sm-2
-        button.btn.btn-default(type='button', aria-label='Menu Up')
-          span.glyphicon.glyphicon-arrow-up(aria-hidden='true')
-        button.btn.btn-default(type='button', aria-label='Menu Down')
-          span.glyphicon.glyphicon-arrow-down(aria-hidden='true')
-        button.btn.btn-default(type='button', aria-label='Menu Add')
-          span.glyphicon.glyphicon-plus(aria-hidden='true', ng-click="additem()")
-        button.btn.btn-default(type='button', aria-label='Menu Remove')
-          span.glyphicon.glyphicon-remove(aria-hidden='true')
-        button.btn.btn-default(type='button', aria-label='Menu Save', ng-click="menusave(menuitem)")
-          span.glyphicon.glyphicon-floppy-disk(aria-hidden='true')
+    form.tab-form-admin(name="outerForm")
+        uib-tabset(active="activeForm")
+            //- uib-tab(index="0")
+            //-     uib-tab-heading
+            //-         | глобальные настройки
+            //-     ng-form(name="nestedForm")
+            //-         .form-group(style="margin-top: 5px; overflow-y: scroll; height: 400px")
+            uib-tab(index="1")
+                uib-tab-heading
+                    | редактирование меню
+                ng-form(name="menuEditForm")
+                  .col-sm-12
+                    .col-sm-6(style="padding: 10px 10px 10px 10px;" )
+                      button.btn.btn-info(ng-click="levelback(level)", ng-if="level > 0") Вернуться на предыдущий уровень
+                    .row
+                    div(ng-repeat="menuitem in menus")
+                      .col-sm-8
+                        .form-group(style="background-color: #F7F1D9; font-color: #000")
+                          label название меню
+                          input.form-control(ng-model='menuitem.title', name='title')
+                          label url
+                          input.form-control(ng-model='menuitem.url', name='url')
+                          div(style="background-color: #87ABCB;", ng-if="menuitem.children.length > 0")
+                            button.btn.btn-success.form-control(type='button', ng-click="expandmenu(menuitem)") развернуть вложенное меню
+                      .col-sm-2
+                        button.btn.btn-default(type='button', aria-label='Menu Up')
+                          span.glyphicon.glyphicon-arrow-up(aria-hidden='true')
+                        button.btn.btn-default(type='button', aria-label='Menu Down')
+                          span.glyphicon.glyphicon-arrow-down(aria-hidden='true')
+                        button.btn.btn-default(type='button', aria-label='Menu Add')
+                          span.glyphicon.glyphicon-plus(aria-hidden='true', ng-click="additem()")
+                        button.btn.btn-default(type='button', aria-label='Menu Remove')
+                          span.glyphicon.glyphicon-remove(aria-hidden='true')
+                        button.btn.btn-default(type='button', aria-label='Menu Save', ng-click="menusave(menuitem)")
+                          span.glyphicon.glyphicon-floppy-disk(aria-hidden='true')
 
+            uib-tab(index="2")
+                uib-tab-heading
+                    | пользователи
+                ng-form(name="profileForm")
+                    .form-group(style="background-color: #F7F1D9; font-color: #000")
+                        ul.nav.nav-pills
+                            // фильтр поиска в обращениях
+                            .col-sm-2(style="margin: 0 0 0 4px; padding: 0; float: right;")
+                                input.form-control(uib-dropdown-search,id="cfilter", name="cfilter", type="text", ng-model="catquery", placeholder="строка поиска...")
+                    .form-group(style="margin-top: 5px; overflow-y: scroll; height: 450px")
+                        uib-accordion(close-others="true")
+                            div.panel-info(uib-accordion-group, heading="{{category.name}}", ng-repeat="category in filterCategories=(categories | filter: catquery)")
+                                .form-group
+                                    label наименование категории:
+                                    input.form-control(type="text", required, ng-model="category.name")
+                                .form-group
+                                    label наименование органа власти:
+                                    //- {{category.ogv}}
+                                    select.form-control(name="goverment", ng-model="category.ogv", required, ng-options="g as g.name for g in goverments track by g.id")
+            uib-tab(index="3")
+                uib-tab-heading
+                    | органы власти
+                ng-form(name="profileForm")
+                    .form-group(style="background-color: #F7F1D9; font-color: #000")
+                        ul.nav.nav-pills
+                            // фильтр поиска в обращениях
+                            .col-sm-2(style="margin: 0 0 0 4px; padding: 0; float: right;")
+                                input.form-control(uib-dropdown-search,id="ifilter", name="ifilter", type="text", ng-model="gquery", placeholder="строка поиска...")
+                    .form-group(style="margin-top: 5px; overflow-y: scroll; height: 450px")
+                        uib-accordion(close-others="true")
+                            div.panel-info(uib-accordion-group, heading="{{goverment.name}}", ng-repeat="goverment in filtergoverments=(goverments | filter: gquery)")
+                                .form-group
+                                    label наименование органа власти:
+                                    input.form-control(type="text", required, ng-model="goverment.name")
+                                .form-group
+                                    label ответственное лицо:
+                                    //- {{goverment.moderator}}
+                                    select.form-control(name="user", ng-model="goverment.moderator", required, ng-options="u as u.name for u in users track by u.id")
