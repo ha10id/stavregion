@@ -61,7 +61,8 @@
   app.get('/api/regions', api.listRegions);
   app.get('/api/listsimple', api.listSimpleNews);
   // app.get('/api/admin', admin.menu);
-  // app.put('/api/post/:id', api.editPost);
+  app.put('/api/menus/:id', menu.editMenu);
+  app.post('/api/menus/', menu.addMenu);
   // app.delete('/api/post/:id', api.deletePost);
 
   app.get('/api/menus', menu.menusList);

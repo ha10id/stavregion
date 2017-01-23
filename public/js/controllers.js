@@ -1,24 +1,79 @@
 // Контроллеры
 // страница администрирования
-function AdminPanelCtrl($scope, modalService, $http, $log) {
+function AdminPanelCtrl($scope, modalService, $http, Menus, $log) {
   'use strict';
+  var level = 0;
   // $scope.users = Users.query();
   // $scope.categories = Categories.query();
   // $scope.goverments = Goverments.query();
-  $http.get('/api/menus').
-  success(function(data, status, headers, config) {
-    $scope.menus = data;
-    $log.info($scope.menus);
-  });
-  $scope.status = {
-    isFirstOpen: true,
-    oneAtATime: true,
-    isItemOpen: [true]
+  // $http.get('/api/menus').
+  // success(function(data, status, headers, config) {
+  //   $scope.menus = data;
+  //   $log.info($scope.menus);
+  // });
+  $scope.menus = Menus.query();
+
+  $scope.levelback = function(level){
+    level = 0;
+    $scope.menus = Menus.query();
+  }
+
+  $scope.additem = function() {
+    $log.info("additem");
+    var newitem = new Menus();
+    newitem.$save(function(err) {
+      console.log(newitem);
+      var data = newitem.toObject();
+      data.id = data._id;
+      if (err) {
+        res.send(err);
+      }
+      res.json(data);
+    });
+   $scope.$apply;
+   $scope.menus = Menus.query();
+  }
+
+  $scope.expandmenu = function(itemmenu) {
+    $log.info(itemmenu);
+    $scope.menus = itemmenu.children;
+    level += 1;
+    $log.info(level);
+  }
+  $scope.menusave = function(menuitem) {
+    $log.info(menuitem);
+    Menus.update({id: menuitem._id}, menuitem,
+    function (data) {
+      $log.info("обращение сохранено");
+      $log.debug(data);
+      // $location.url('/');
+    },
+    function (err) {
+      // сообщаем об ошибке.
+      $log.warn("++++++++++++++++++++++++++++");
+      switch(err.status) {
+        case 401:
+          $log.info(err);
+          alert('Вы не авторизованы! Зарегистрируйтесь на портале (меню "ВХОД").');
+          break;
+        case 403:
+          $log.info(err);
+          alert('Не достаточно прав.');
+          break;
+        default:
+          alert(err.statusText);
+      };
+    });
   };
 
-  $scope.showInfo = function(item) {
-    $log.info(item);
+  $scope.compilemenu = function() {
+    $http.get('/api/menus').
+    success(function(data, status, headers, config) {
+      $scope.menus = data;
+      $log.info($scope.menus);
+    });
   }
+
   // // показываем диалог комментария
   // $scope.showEdit = function (item) {
   //   $scope.menu.title = 'item.title';
